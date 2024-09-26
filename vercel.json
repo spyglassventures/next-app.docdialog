@@ -9,7 +9,12 @@
             "source": "/",
             "destination": "https://docdialog.ch/intern",
             "permanent": true,
-            "domain": "ki.doctor"
+            "has": [
+                {
+                    "type": "host",
+                    "value": "ki.doctor"
+                }
+            ]
         }
     ]
 }
