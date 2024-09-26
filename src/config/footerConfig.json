@@ -1,7 +1,7 @@
 {
     "logo": {
-        "light": "/images/logo/logo-2.svg",
-        "dark": "/images/logo/logo.svg",
+        "light": "/images/logo/LogoLight.png",
+        "dark": "/images/logo/LogoDark.png",
         "alt": "logo",
         "width": 140,
         "height": 30
