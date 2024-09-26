@@ -3,5 +3,13 @@
         "src/app/api/summarize/route.js": {
             "maxDuration": 60
         }
-    }
+    },
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "https://docdialog.ch/intern",
+            "permanent": true,
+            "domain": "ki.doctor"
+        }
+    ]
 }
