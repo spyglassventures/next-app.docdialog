@@ -1,16 +1,16 @@
 {
     "metadata": {
-        "title": "Die AGB's Team der Praxis Kappelihof",
-        "description": "Dr. med. Christoph Berg und das MPA Team der Praxis Kappelihof in Buchs, SG"
+        "title": "Die AGB's von Doc Dialog",
+        "description": "Das Team von Doc Dialog freut sich auf den Kontakt mit Ihnen."
     },
     "breadcrumb": {
         "pageName": "Vertragsbedingungen",
-        "description": "Dr. med. Christoph Berg und das MPA Team der Praxis Kappelihof in Buchs, SG."
+        "description": "Das Team von Doc Dialog freut sich auf den Kontakt mit Ihnen."
     },
     "agb": {
-        "medicalServiceName": "Praxis Kappelihof",
-        "locationAddress": "Grünaustrasse 1, 9470 Buchs, SG",
+        "medicalServiceName": "Doc Dialog",
+        "locationAddress": "Seestattstrasse 1, 8852 Altendorf, SZ",
         "validFromDate": "25. Mai 2024",
-        "platformUrl": "www.praxiskappelihof.ch"
+        "platformUrl": "www.docdialog.ch"
     }
 }

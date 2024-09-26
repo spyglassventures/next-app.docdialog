@@ -16,17 +16,13 @@
             "path": "/about"
         },
         {
-            "title": "Unser Angebot",
-            "path": "/services"
-        },
-        {
             "title": "Lageplan und Kontakt",
             "path": "/contactForm"
         },
         {
-            "title": "Medibestellung & Formulare",
+            "title": "Bestellen",
             "path": "/downloadsBestellungen"
         }
     ],
-    "contactNumber": "Tel. 081 756 2121"
+    "contactNumber": "Tel. 079 832 92 98"
 }

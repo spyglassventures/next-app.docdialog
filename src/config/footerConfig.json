@@ -6,18 +6,14 @@
         "width": 140,
         "height": 30
     },
-    "address": "Grünaustrasse 1, 9470 Buchs, SG",
+    "address": "Seestattstrasse 1, 8852 Altendorf, SZ",
     "sections": [
         {
             "title": "Nützliche Links",
             "links": [
                 {
                     "href": "/about",
-                    "text": "Arzt und Team"
-                },
-                {
-                    "href": "/services",
-                    "text": "Unser Angebot"
+                    "text": "Unser Team"
                 }
             ]
         },
@@ -43,7 +39,7 @@
                 },
                 {
                     "href": "/videocall",
-                    "text": "Videosprechstunde"
+                    "text": "Videoanruf"
                 },
                 {
                     "href": "/intern",

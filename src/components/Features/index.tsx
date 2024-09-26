@@ -8,7 +8,7 @@ const Features = () => {
       <section id="features" className="py-6 md:py-10 lg:py-18">
         <div className="container">
           <SectionTitle
-            title="Unsere Leistungen"
+            title="Was kann Doc Dialog?"
             paragraph=""
             center
           />

@@ -3,28 +3,19 @@
     "address": {
         "title": "Adresse",
         "content": [
-            "Hausarztpraxis Buchs AG (Praxis Kappelihof)",
-            "Grünaustrasse 1",
-            "9470 Buchs SG",
-            "E-Mail: praxisbuchs@hin.ch",
-            "Telefon: +41 81 756 21 21",
-            "CHE-459.995.311"
+            "Doc Dialog (Spylgass Ventures GmbH)",
+            "Seestattstrasse 1",
+            "8852 Altendorf",
+            "E-Mail: office@spyglassventures.ch",
+            "Telefon: +41 79 832 9298"
         ]
     },
     "openingHours": {
         "title": "Öffnungszeiten",
         "hours": [
             [
-                "Montag - Mittwoch:",
-                "08:00 - 12:00 Uhr und 14:00 - 18:00 Uhr"
-            ],
-            [
-                "Donnerstag:",
-                "08:00 - 16:00 Uhr (Sprechstunde bis 12:00 Uhr)"
-            ],
-            [
-                "Freitag:",
-                "08:00 - 12:00 Uhr und 13:00 - 17:00 Uhr"
+                "Montag - Freitag:",
+                "08:00 - 19:00 Uhr"
             ],
             [
                 "Samstag:",
@@ -41,10 +32,6 @@
         "title": "Notfallnummern",
         "numbers": [
             [
-                "Notfalldienst:",
-                "0900 740 742"
-            ],
-            [
                 "Internationaler Notruf:",
                 "112"
             ],
@@ -55,30 +42,6 @@
             [
                 "Feuerwehr:",
                 "118"
-            ],
-            [
-                "REGA Rettungsflugwacht:",
-                "1414"
-            ],
-            [
-                "Die Dargebotene Hand / Telefonseelsorge:",
-                "143"
-            ],
-            [
-                "Sanität / Ambulanz:",
-                "144"
-            ],
-            [
-                "Vergiftungen:",
-                "145"
-            ],
-            [
-                "Kinder-/Jugendnotruf:",
-                "147"
-            ],
-            [
-                "Elternnotruf:",
-                "0848 35 45 55"
             ]
         ]
     },
@@ -128,22 +91,10 @@
         "title": "Ferien/Fortbildung",
         "content": [
             [
-                "Fortbildung:",
-                "15. März - 16. März, 24"
-            ],
-            [
-                "Sommerurlaub:",
-                "20. Juli - 04. August, 24"
-            ],
-            [
-                "Herbsturlaub:",
-                "28. September - 06. Oktober, 24"
-            ],
-            [
                 "Weihnachtsferien:",
                 "23. Dez. - 5. Januar, 25"
             ]
         ],
-        "note": "Die Praxis bleibt aufgrund von Urlaub und Fortbildungen an folgenden Tagen geschlossen:"
+        "note": "Doc Dialog bleibt aufgrund von Urlaub und Fortbildungen an folgenden Tagen geschlossen:"
     }
 }

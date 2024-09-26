@@ -1,13 +1,13 @@
 {
   "_comment": "// # src/config/aboutPageContent.json",
   "metadata": {
-    "title": "Das Team der Praxis Kappelihof",
-    "description": "Dr. med. Christoph Berg und das MPA Team der Praxis Kappelihof in Buchs, SG"
+    "title": "Das Team von Doc Dialog",
+    "description": "Das Team von Doc Dialog freut sich auf den Kontakt mit Ihnen."
   },
   "pageContent": {
     "Breadcrumb": {
-      "pageName": "Die Praxis Kappelihof",
-      "description": "Dr. med. Christoph Berg und das MPA Team der Praxis Kappelihof in Buchs, SG."
+      "pageName": "Doc Dialog",
+      "description": "Das Team von Doc Dialog freut sich auf den Kontakt mit Ihnen."
     }
   }
 }
