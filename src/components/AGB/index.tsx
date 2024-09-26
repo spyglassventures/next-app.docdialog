@@ -86,7 +86,7 @@ const Agb = ({ medicalServiceName, locationAddress, validFromDate, platformUrl }
         <div className="p-0 ">
           <SectionTitle
             title={`Vertragsbedingungen ${medicalServiceName}`}
-            paragraph={`Gültig ab ${validFromDate} für die Erbringung von ärztlichen und psychotherapeutischen Leistungen in der Praxis am Standort ${locationAddress}.`}
+            paragraph={`Gültig ab ${validFromDate} für die Erbringung von digitalen Leistungen am Standort ${locationAddress}.`}
             mb="mb-8 "
           />
 

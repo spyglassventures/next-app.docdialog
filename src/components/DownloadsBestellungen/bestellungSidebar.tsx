@@ -11,16 +11,14 @@ const DrugOrderInstructions = () => {
     return (
         <div className="relative z-10 rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11">
             <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
-                Hinweise: Wie Medikamente bestellen?
+                Hinweise: Wie Doc Dialog bestellen?
             </h3>
 
             <ul className="list-disc pl-5 space-y-2 mb-8 text-base text-body-color">
-                <li>Füllen Sie das Medikamentenbestellformular mit Ihrem Namen, Vornamen und Geburtsdatum aus.</li>
-                <li>Tragen Sie die benötigte Anzahl und Dosierung der Medikamente ein.</li>
-                <li>Stellen Sie sicher, dass Sie alle notwendigen Medikamente aufgelistet haben.</li>
-                <li>Sie können das ausgefüllte Formular entweder per E-Mail an die Praxis senden oder persönlich in der Praxis abgeben.</li>
-                <li>Kontaktieren Sie die Praxis bei Rückfragen telefonisch oder per E-Mail.</li>
-                <li>Das Praxisteam wird Ihre Bestellung bearbeiten und Sie informieren, sobald die Medikamente bereit sind.</li>
+                <li>Füllen Sie das Bestellformular mit Ihrem Praxisnamen, Adresse und weiteren Angaben aus.</li>
+                <li>Sie können das ausgefüllte Formular entweder per E-Mail, Post oder auch gerne persönlich in unserem Büro abgeben.</li>
+                <li>Kontaktieren Sie uns bei Rückfragen telefonisch oder per E-Mail.</li>
+                <li>Das Doc Dialog wird Ihre Bestellung zeitnahe bearbeiten und in wenigen Tagen für Sie als Entwurf aufschalten.</li>
             </ul>
 
             <div className="mb-8">

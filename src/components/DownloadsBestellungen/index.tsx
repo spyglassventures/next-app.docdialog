@@ -41,7 +41,7 @@ const DownloadsBestellungen = () => {
   });
 
   // Extract the prominent Medikamentbestellformular
-  const medikamentForm = documentsData.sections.Documents.find(doc => doc.name === 'Medikamentbestellformular');
+  const medikamentForm = documentsData.sections.Documents.find(doc => doc.name === 'Doc Dialog Bestellformular');
 
   // Toggle language between DE and EN
   const toggleLanguage = () => {

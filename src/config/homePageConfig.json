@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "title": "Praxis Kappelihof, Buchs",
-        "description": "Ihre Hausarztpraxis in St. Gallen, - Doktor. Berg"
+        "title": "Doc Dialog, Altendorf, SZ",
+        "description": "Ihre Digitaler Copilot bei der Praxisadministration"
     },
     "modules": {
         "ScrollUp": true,
@@ -10,11 +10,11 @@
         "AboutSectionTwo": false,
         "Openinghours": false,
         "Features": true,
-        "Video": false,
-        "Brands": true,
+        "Video": true,
         "AboutSectionOne": false,
-        "Testimonials": false,
-        "Pricing": false,
+        "Testimonials": true,
+        "Pricing": true,
+        "Brands": true,
         "Blog": false,
         "Contact": false
     }

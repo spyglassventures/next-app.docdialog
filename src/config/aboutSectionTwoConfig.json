@@ -1,14 +1,18 @@
 {
     "team": [
         {
-            "src": "/images/about/old/16.jpg",
-            "caption": "Dr. Christoph Berg, Facharzt Allgemeine Medizin"
+            "src": "/images/about/Fraenzi.jpg",
+            "caption": "Fränzi Schnyder, Inhaltliche Gestaltung"
+        },
+        {
+            "src": "/images/about/DanielM.jpg",
+            "caption": "Dr. sc. Daniel Müller, Gründer/Programmierung"
         }
     ],
     "praxis": [
         {
-            "src": "/images/about/Sprechzimmer.jpg",
-            "caption": "Sprechzimmer"
+            "src": "/images/about/Gregor.jpg",
+            "caption": "Gregor Müller, FA für Innere Medizin (FMH)"
         }
     ]
 }

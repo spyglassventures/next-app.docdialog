@@ -16,7 +16,7 @@ const Videocall = () => {
             {isActive ? (
               <>
                 <h1 className="mb-4 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl md:text-5xl">
-                  Videokonferenz mit unserem Praxisteam
+                  Videokonferenz mit unserem Team
                 </h1>
                 <a
                   href={link}

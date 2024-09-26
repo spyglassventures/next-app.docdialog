@@ -5,29 +5,56 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Dr. med. Christoph Berg",
+    designation: "Praxisinhaber, St. Gallen, FA Allgemeine Medizin",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+      "Täglich spare ich Zeit, die ich nun besser für die direkte Patientenbetreuung nutzen kann. Meine eigenen Differentialdiagnosen mit den Vorschlägen der KI zu vergleichen, hält mich mental flexibel. Auch habe ich nicht nur eine zusätzliche Absicherung, sondern lerne auch regelmäßig neue Ansätze und Perspektiven kennen.",
+    image: "/images/testimonials/DrBerg.jpg",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Gregor Müller, Internist (FMH)",
+    designation: "Angestellter Arzt, Zürich, FA Innere Medizin und Advisor bei DocDialog",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+      "Eine genaue Dokumentation ist von entscheidender Bedeutung. Seit wir das KI-Tool verwenden, hat sich unser gesamter Arbeitsablauf verbessert. Das System erleichtert nicht nur die Verlaufsdokumentation, sondern auch die Bearbeitung von Rückweisungen und Kostengutsprachen, was unseren MPAs eine erhebliche Arbeitserleichterung verschafft hat.",
+    image: "/images/testimonials/Gregor.jpg",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Dr. med. Christoph Rosenbaum",
+    designation: "Praxisinhaber, FA für Chirurgie und Herzchirurgie, Zürich",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "Formulare blieben früher immer mal liegen bei uns. Mit Doc Dialog macht es Spass und ich brauche nur noch 10% der Zeit AHV und KTG Formulare auszufüllen. Das System übernimmt einen Großteil der Arbeit.  Besonders gefällt mir, wie nahtlos das Tool in den Praxisablauf integriert ist, keine Unterbrechungen, alles auf einer Seite.",
+    image: "/images/testimonials/DrRosenbaum.png",
+    star: 5,
+  },
+  {
+    id: 4,
+    name: "Angelika Bergmann",
+    designation: "MPA Leitung, Zürich",
+    content:
+      "In unserer Praxis hat die Einführung des KI-Tools einen riesigen Unterschied gemacht. Früher sind Rückweisungen bei uns leider liegen geblieben. Heute übernimmt das Tool die meiste Arbeit, sei es bei Versicherungsanfragen oder Rückweisungen. Eine enorme Zeitersparnis und wir können uns besser auf unsere Patienten konzentrieren.",
+    image: "/images/testimonials/Angelika.jpg",
+    star: 5,
+  },
+  {
+    id: 5,
+    name: "Dr. med. Helmut Eckardt",
+    designation: "Praxisinhaber, Zürich",
+    content:
+      "Als Praxisinhaber bin ich ständig auf der Suche nach Möglichkeiten, unsere Abläufe zu optimieren. Das KI-Tool ist genau die Art von Innovation, die ich mir für meine Praxis gewünscht habe. Es hilft nicht nur bei der automatisierten Bearbeitung von Anfragen, sondern auch bei der Erstellung komplexer Anfragen wie Kostengutsprachen.",
+    image: "/images/testimonials/DrEckardt-min.jpg",
+    star: 5,
+  },
+  {
+    id: 6,
+    name: "Dr. med. Georg Fischer",
+    designation: "Praxisinhaber, FA für Allgemeinmedizin, Zürich",
+    content:
+      "Das KI-Tool hat meine Praxis effizienter gemacht. Von der Dokumentation von Wunden bis hin zur Erstellung von Ernährungsplänen, Reiseempfehlungen, usw. – das System bietet vielseitige Unterstützung. Auch die Möglichkeit, mit wenigen Eingaben Differenzialdiagnosen zu erstellen und die Ergebnisse mit meinen eigenen Diagnosen abzugleichen verbessert auch die Qualität meiner Entscheidungen.",
+    image: "/images/testimonials/DrFischer.png",
     star: 5,
   },
 ];
@@ -37,8 +64,8 @@ const Testimonials = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Was unsere Kunden sagen"
+          paragraph="Ich spare 30 Minuten pro Tag und habe mehr Zeit für meine Familie. Ich kann es nur empfehlen!"
           center
         />
 

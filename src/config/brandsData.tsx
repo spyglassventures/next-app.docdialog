@@ -3,59 +3,76 @@ import { Brand } from "@/types/brand";
 // best format: 1400 × 342
 
 const brandsData: Brand[] = [
-  // {
-  //   id: 6,
-  //   name: "Formbold",
-  //   href: "https://www.gesundeprodukte.ch/",
-  //   image: "/images/brands/formbold.svg",
-  //   imageLight: "/images/brands/formbold-light.svg",
-  // },
-
   {
     id: 1,
-    name: "Equam",
-    href: "https://www.equam.ch/",
-    image: "/images/brands/equam2.png",
-    imageLight: "/images/brands/equam2.png",
+    name: "Kappelihof",
+    href: "https://www.praxiskappelihof.ch/",
+    image: "/images/brands/kappelihof.png",
+    imageLight: "/images/brands/kappelihof.png",
   },
 
+
+
+
   {
-    id: 3,
-    name: "Swiss Transplant",
-    href: "https://www.swisstransplant.org/",
-    image: "/images/brands/swisstransplant.svg",
-    imageLight: "/images/brands/swisstransplant.svg",
+    id: 5,
+    name: "Kirchbühl",
+    href: "https://www.praxiskirchbuehl.ch/",
+    image: "/images/brands/kirchbuehl.png",
+    imageLight: "/images/brands/kirchbuehl",
   },
   {
-    id: 2,
-    name: "Gesundeprodukte",
-    href: "https://www.gesundeprodukte.ch/",
-    //image: "/images/brands/uideck.svg",
-    image: "/images/brands/Logo_Gesunde_Produkte.png",
-    imageLight: "/images/brands/Logo_Gesunde_Produkte.png",
+    id: 6,
+    name: "Frauenfeld",
+    href: "https://www.familienpraxisfrauenfeld.ch/",
+    image: "/images/brands/frauenfeld.png",
+    imageLight: "/images/brands/frauenfeld.png",
+  },
+  // {
+  //   id: 7,
+  //   name: "Bettmeralp",
+  //   href: "https://www.gesundeprodukte.ch/",
+  //   image: "/images/brands/bettmeralp.png",
+  //   imageLight: "/images/brands/bettmeralp.png",
+  // },
+  // {
+  //   id: 8,
+  //   name: "Gesundeprodukte",
+  //   href: "https://www.gesundeprodukte.ch/",
+  //   image: "/images/brands/Logo_Gesunde_Produkte.png",
+  //   imageLight: "/images/brands/Logo_Gesunde_Produkte.png",
+  // },
+  // {
+  //   id: 9,
+  //   name: "Swiss Transplant",
+  //   href: "https://www.swisstransplant.org/",
+  //   image: "/images/brands/swisstransplant.svg",
+  //   imageLight: "/images/brands/swisstransplant.svg",
+  // },
+  {
+    id: 3,
+    name: "Praxis im City",
+    href: "https://www.praxisimcity.ch/",
+    image: "/images/brands/praxisimcity.png",
+    imageLight: "/images/brands/praxisimcity.png",
   },
   {
     id: 4,
-    name: "Pizaolcare",
-    href: "https://www.Pizolcare.ch/",
-    image: "/images/brands/pizolcare.png",
-    imageLight: "/images/brands/pizolcare.png",
+    name: "Näfels",
+    href: "https://www.praxisnaefels.ch/",
+    image: "/images/brands/naefels.png",
+    imageLight: "/images/brands/naefels.png",
   },
-  // {
+  {
+    id: 9,
+    name: "Oerlikon",
+    href: "https://www.hausarztpraxisoerlikon.ch/",
+    image: "/images/brands/Logo_Oerlikon.png",
+    imageLight: "/images/brands/Logo_Oerlikon.png",
+  },
 
-  //   id: 5,
-  //   name: "Labor Team",
-  //   href: "https://www.laborteam.ch/",
-  //   image: "/images/brands/Logo_Laborteam.png",
-  //   imageLight: "/images/brands/Logo_Laborteam.png",
-  // }
-  // {
-  //   id: 4,
-  //   name: "Tailadmin",
-  //   href: "https://www.gesundeprodukte.ch/",
-  //   image: "/images/brands/tailadmin.svg",
-  //   imageLight: "/images/brands/tailadmin-light.svg",
-  // }
+
+
 ];
 
 export default brandsData;

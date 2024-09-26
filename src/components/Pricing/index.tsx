@@ -11,8 +11,8 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Einfache Preise"
+          paragraph="Wählen Sie die Option, welche am besten für Sie zutrifft."
           center
           width="665px"
         />
@@ -21,13 +21,12 @@ const Pricing = () => {
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
             <span
               onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
-                  ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
+              className={`${isMonthly
+                ? "pointer-events-none text-primary"
+                : "text-dark dark:text-white"
+                } mr-4 cursor-pointer text-base font-semibold`}
             >
-              Monthly
+              Monatlich
             </span>
             <div
               onClick={() => setIsMonthly(!isMonthly)}
@@ -36,9 +35,8 @@ const Pricing = () => {
               <div className="relative">
                 <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
                 <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
+                  className={`${isMonthly ? "" : "translate-x-full"
+                    } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
                 >
                   <span className="active h-4 w-4 rounded-full bg-white"></span>
                 </div>
@@ -46,13 +44,12 @@ const Pricing = () => {
             </div>
             <span
               onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
-                  ? "text-dark dark:text-white"
-                  : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
+              className={`${isMonthly
+                ? "text-dark dark:text-white"
+                : "pointer-events-none text-primary"
+                } ml-4 cursor-pointer text-base font-semibold`}
             >
-              Yearly
+              Jährlich
             </span>
           </div>
         </div>
@@ -60,44 +57,48 @@ const Pricing = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Lite"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            price={isMonthly ? "Fr. 129" : "Fr. 1499"}
+            duration={isMonthly ? "Monat" : "Jahr"}
+            subtitle="Dieses Paket bietet Ihnen den Zugang zur Webseite ohne KI-Tools, aber inklusive Intranet und mehreren Updates pro Jahr."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="moderne Praxis Webseite" status="active" />
+            <OfferList text="Mobile optimierte Nutzung" status="active" />
+            <OfferList text="EQUAM / Zertifierungskonformer Inhalt" status="active" />
+            <OfferList text="Consent Manager" status="active" />
+            <OfferList text="Passwortgeschütztes Intranet" status="active" />
+            <OfferList text="Patientendownloads" status="active" />
+            <OfferList text="Medikamentebestellung" status="active" />
+
           </PricingBox>
           <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            packageName="Praxis"
+            price={isMonthly ? "Fr. 398" : "Fr. 4499"}
+            duration={isMonthly ? "Monat" : "Jahr"}
+            subtitle="Das komplette Paket mit allen Features, die in den Testimonials beschrieben sind, für Ihre Praxis."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="alles aus Paket Lite" status="active" />
+            <OfferList text="Integration in die Praxis Webseite (optional)" status="active" />
+            <OfferList text="KI Differentialdiagnosen" status="active" />
+            <OfferList text="KI Formulare (AHV, KTG, SUVA, ...)" status="active" />
+            <OfferList text="KI Ernährungsberatung" status="active" />
+            <OfferList text="KI Reiseberatung" status="active" />
+            <OfferList text="KI Überweisungen" status="active" />
+            <OfferList text="HIN Teilnehmersuche" status="active" />
           </PricingBox>
           <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            packageName="Praxisgruppe"
+            price="Auf Anfrage"
+            duration=""
+            subtitle="Für größere Praxisgruppen erstellen wir maßgeschneiderte Angebote. Bitte kontaktieren Sie uns für eine individuelle Preisgestaltung."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="alles aus Paket Praxis (mehrfach)" status="active" />
+            <OfferList text="Statistik" status="active" />
+            <OfferList text="Controllingtools" status="active" />
+            <OfferList text="Werbepartner (optional)" status="active" />
           </PricingBox>
         </div>
+
+
       </div>
 
       <div className="absolute bottom-0 left-0 z-[-1]">
