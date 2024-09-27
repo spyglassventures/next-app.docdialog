@@ -145,8 +145,9 @@ const Hero = () => {
                 </linearGradient>
               </defs>
             ))}
-            <circle cx="277" cy="63" r="225" fill="url(#paint0_linear_25:217)" />
-            <circle cx="17.9997" cy="182" r="18" fill="url(#paint1_radial_25:217)" />
+            {/* yellow round backgrounds */}
+            {/* <circle cx="277" cy="63" r="225" fill="url(#paint0_linear_25:217)" />
+            <circle cx="17.9997" cy="182" r="18" fill="url(#paint1_radial_25:217)" /> */}
           </svg>
         </div>
       </section>

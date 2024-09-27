@@ -1,11 +1,12 @@
-// layout.tsx
 "use client";
 
+import { useState, useEffect } from "react";
+import { usePathname } from 'next/navigation'; // Import usePathname for Next.js routing
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
-import { Analytics } from '@vercel/analytics/react'; // used for vercel Analytics, login to vercel to see events, page usage
+import { Analytics } from '@vercel/analytics/react';
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
@@ -16,6 +17,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname(); // Use usePathname to get the current route
+  const [showHeaderFooter, setShowHeaderFooter] = useState(true);
+
+  useEffect(() => {
+    // Automatically show header and footer if the page is /intern
+    if (pathname === '/intern') {
+      setShowHeaderFooter(false);
+    }
+  }, [pathname]);
+
   return (
     <html suppressHydrationWarning lang="de">
       <head>
@@ -37,7 +48,7 @@ export default function RootLayout({
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                       })(window,document,'script','dataLayer','GTM-5QZFZCC7');`,
           }}
@@ -55,10 +66,11 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         <Providers>
-          <Header />
+          {/* The toggle switch is hidden and only renders header/footer based on state */}
+          {showHeaderFooter && <Header />}
           {children}
-          <Analytics mode={'production'} />;
-          <Footer />
+          {showHeaderFooter && <Footer />}
+          <Analytics mode={'production'} />
           <ScrollToTop />
         </Providers>
       </body>

@@ -51,7 +51,7 @@ export default function ClientPage() {
   return (
     <>
       <section className="pb-3">
-        {showTicker && (
+        {/* {showTicker && (
           <div className="container p-3">
             <div className="ticker-ad rounded shadow-lg relative">
               <div className="ticker-wrapper">
@@ -62,7 +62,7 @@ export default function ClientPage() {
               </button>
             </div>
           </div>
-        )}
+        )} */}
         <div className="container mx-auto px-4">
           <div className="mt-4 flex flex-wrap justify-between gap-2">
             {NAV_ITEMS.mainComponents
