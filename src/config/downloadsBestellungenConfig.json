@@ -1,10 +1,10 @@
 {
     "metadata": {
-        "title": "Downloads der Praxis Kappilihof, Buchs",
+        "title": "Downloads Doc Dialog",
         "description": "Hier finden Sie Informationen über die Downloads, welche wir anbieten."
     },
     "breadcrumb": {
-        "pageName": "Medikamentenbestellung & Formulare",
+        "pageName": "Anmeldung zur Nutzung von Doc",
         "description": "Hier finden Sie Informationen zu unserem Downloads."
     },
     "sections": {
@@ -13,88 +13,16 @@
         "Openinghours": false,
         "Documents": [
             {
-                "name": "Medikamentbestellformular",
-                "filename": "Medikamentbestellformular-de.pdf",
-                "path": "/downloadsBestellungen/",
-                "previewable": true,
-                "numPages": 2,
-                "contentType": "application/pdf"
-            },
-            {
-                "name": "FMH Wegleitung",
-                "filename": "fmh_wegleitung-de.pdf",
-                "path": "/downloadsBestellungen/",
-                "previewable": true,
-                "numPages": 5,
-                "contentType": "application/pdf"
-            },
-            {
-                "name": "FMH Directive",
-                "filename": "fmh_wegleitung-en-v1.pdf",
-                "path": "/downloadsBestellungen/",
-                "previewable": true,
-                "numPages": 7,
-                "contentType": "application/pdf"
-            },
-            {
-                "name": "FMH Advance Directive detailed",
-                "filename": "fmh-advance-directive-long-en-v1.pdf",
-                "path": "/downloadsBestellungen/",
-                "previewable": true,
-                "numPages": 13,
-                "contentType": "application/pdf"
-            },
-            {
-                "name": "FMH Advance Directive Short",
-                "filename": "fmh-advance-directive-short-en-v1.pdf",
-                "path": "/downloadsBestellungen/",
-                "previewable": true,
-                "numPages": 7,
-                "contentType": "application/pdf"
-            },
-            {
-                "name": "FMH Patientenverfügung Detailliert",
-                "filename": "fmh-patientenverfuegung-detailliert-de.pdf",
-                "path": "/downloadsBestellungen/",
-                "previewable": true,
-                "numPages": 13,
-                "contentType": "application/pdf"
-            },
-            {
-                "name": "FMH Patientenverfügung Kurz",
-                "filename": "fmh-patientenverfuegung-kurz-de.pdf",
-                "path": "/downloadsBestellungen/",
-                "previewable": true,
-                "numPages": 7,
-                "contentType": "application/pdf"
-            },
-            {
-                "name": "Spenderausweis",
-                "filename": "Spendekarte-de.pdf",
-                "path": "/downloadsBestellungen/",
-                "previewable": true,
-                "numPages": 2,
-                "contentType": "application/pdf"
-            },
-            {
-                "name": "Ärztliches Attest ADAC",
-                "filename": "Formular-Aerztliches-Attest_ADAC-de.pdf",
+                "name": "Doc Dialog Bestellformular",
+                "filename": "Bestellformular_Doc_Dialog.pdf",
                 "path": "/downloadsBestellungen/",
                 "previewable": true,
                 "numPages": 1,
                 "contentType": "application/pdf"
             },
             {
-                "name": "Einzahlungsschein QR IBAN",
-                "filename": "ES_QRIBAN_UBS-de-en.pdf",
-                "path": "/downloadsBestellungen/",
-                "previewable": true,
-                "numPages": 1,
-                "contentType": "application/pdf"
-            },
-            {
-                "name": "Einzahlungsschein QR TWINT",
-                "filename": "ES_QRTWINT-de-en.pdf",
+                "name": "Doc Dialog Demo",
+                "filename": "Demo_Doc_Dialog.pdf",
                 "path": "/downloadsBestellungen/",
                 "previewable": true,
                 "numPages": 1,
