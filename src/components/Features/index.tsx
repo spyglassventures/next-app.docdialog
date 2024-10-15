@@ -35,15 +35,15 @@ const Features = () => {
   const videos = [
     {
       src: "/images/video/Zwischenbericht.mp4",
-      title: "Zwischenbericht",
+      title: "Ein Zwischenbericht...",
       description:
-        "Doc Dialog hilft dabei, semi-automatisch Zwischenberichte auszufüllen, um die ärztliche Dokumentation zu unterstützen.",
+        "Doc Dialog hilft dabei, semi-automatisch praxisübliche Formulare auszufüllen.",
     },
     {
       src: "/images/video/Verlauf.mp4",
-      title: "Verlaufsbericht",
+      title: "mit Doc Dialog ausfüllen",
       description:
-        "Verlaufsberichte werden dank Doc Dialog effizient erstellt, mit direkter ärztlicher Kontrolle.",
+        "Kopieren Sie den anonymisierten relevanten Verlauf in unser Tool und erhalten Sie den ausgefüllten Bericht zürück.",
     },
   ];
 
@@ -65,7 +65,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="Automatisierte Berichte mit Doc Dialog"
-            paragraph="Doc Dialog hilft dabei, Formulare semi-automatisch auszufüllen, während ein Arzt die Kontrolle behält."
+            paragraph="Doc Dialog hilft dabei, Formulare semi-automatisch auszufüllen. Sie als Arzt behalten die Kontrolle."
             center
           />
 
@@ -73,7 +73,9 @@ const Features = () => {
             {videos.map((video, index) => (
               <div key={index} className="w-full max-w-xs">
                 <video
-                  ref={(el) => (videosRef.current[index] = el!)}
+                  ref={(el) => {
+                    if (el) videosRef.current[index] = el;
+                  }}
                   src={video.src}
                   className="w-full h-auto mb-4 rounded-lg shadow-lg"
                   muted
