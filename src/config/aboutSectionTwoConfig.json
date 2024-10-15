@@ -2,17 +2,23 @@
     "team": [
         {
             "src": "/images/about/Fraenzi.jpg",
-            "caption": "Fränzi Schnyder, Inhaltliche Gestaltung"
+            "caption": "Fränzi Schnyder, Inhaltliche Gestaltung",
+            "linkedin": "https://www.linkedin.com/in/scale/",
+            "email": "office@spyglassventures.ch"
         },
         {
             "src": "/images/about/DanielM.jpg",
-            "caption": "Dr. sc. Daniel Müller, Gründer/Programmierung"
+            "caption": "Dr. sc. Daniel Müller, Gründer/Programmierung",
+            "linkedin": "https://www.linkedin.com/in/scale/",
+            "email": "dm@spyglassventures.ch"
         }
     ],
     "praxis": [
         {
             "src": "/images/about/Gregor.jpg",
-            "caption": "Gregor Müller, FA für Innere Medizin (FMH)"
+            "caption": "Gregor Müller, FA für Innere Medizin (FMH)",
+            "linkedin": "https://www.linkedin.com/in/gregor-m%C3%BCller-52345a109/",
+            "email": "gregor@docdialog.ch"
         }
     ]
 }

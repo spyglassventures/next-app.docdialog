@@ -5,6 +5,8 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import NewsTicker from "@/components/Hero/NewsTicker";
+import Benefits from "@/components/Benefits";
+import VideoTestimonials from "@/components/VideoTestimonials";
 
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import Testimonials from "@/components/Testimonials";
@@ -29,6 +31,8 @@ export default function Home() {
       {modules.ScrollUp && <ScrollUp />}
       {modules.Hero && <Hero />}
       {modules.NewsTicker && <NewsTicker />}
+      {modules.Benefits && <Benefits />} {/* Add the Benefits module */}
+      {modules.VideoTestimonials && <VideoTestimonials />}
       {modules.AboutSectionTwo && <AboutSectionTwo />}
       {modules.Openinghours && <Openinghours />}
       {modules.Features && <Features />}
