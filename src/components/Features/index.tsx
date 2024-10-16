@@ -43,7 +43,7 @@ const Features = () => {
       src: "/images/video/Verlauf.mp4",
       title: "mit Doc Dialog ausfüllen",
       description:
-        "Kopieren Sie den anonymisierten relevanten Verlauf in unser Tool und erhalten Sie den ausgefüllten Bericht zürück.",
+        "Kopieren Sie den anonymisierten relevanten Verlauf in unser Tool und erhalten Sie den ausgefüllten Bericht zurück.",
     },
   ];
 
