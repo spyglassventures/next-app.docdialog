@@ -5,17 +5,17 @@ const VideoTestimonials = () => {
         {
             id: 1,
             title: "Dr. Müller spart Zeit mit Doc Dialog",
-            url: "https://www.youtube.com/embed/HKYOhHY3N7E", // Correct embed format
+            url: "https://www.youtube.com/embed/nXFuKdzkivc", // Correct embed format
         },
         {
             id: 2,
             title: "Vorstellung Doc Dialog",
-            url: "https://www.youtube.com/embed/x2adIhJ7kAE", // Correct embed format
+            url: "https://www.youtube.com/embed/nXFuKdzkivc", // Correct embed format
         },
         {
             id: 3,
-            title: "Dr. Berg nutzt die Differentialsdiagnosefunktion",
-            url: "https://www.youtube.com/embed/oGDl1WRx0RE", // Correct embed format
+            title: "Dr. Berg erzählt von seinen Erfahrungen",
+            url: "https://www.youtube.com/embed/nXFuKdzkivc", // Correct embed format
         }
     ];
 
