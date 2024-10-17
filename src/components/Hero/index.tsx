@@ -5,6 +5,7 @@ import ModalContent from '../../components/Modalcontent';
 import { useState, useEffect } from 'react';
 import modalConfig from '@/config/modalConfig.json';
 import heroConfig from '@/config/heroConfig.json';
+import { CheckCircleIcon } from '@heroicons/react/24/solid'; // Import the green checkmark icon
 
 const Hero = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -51,11 +52,27 @@ const Hero = () => {
 
     if (heroConfig.hero.backgroundMedia?.type === "image") {
       return (
-        <img
-          src={heroConfig.hero.backgroundMedia.src}
-          alt="Background"
-          className="absolute inset-0 object-cover w-full h-full"
-        />
+        <div className="absolute inset-0">
+          <img
+            src={heroConfig.hero.backgroundMedia.src}
+            alt="Background"
+            className="absolute inset-0 object-cover w-full h-full"
+            style={{
+              WebkitMaskImage:
+                "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1))", // Left-side blur effect
+              maskImage: "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1))", // Fallback for other browsers
+              filter: "blur(2px)", // Adjust this value to control the blur amount
+            }}
+          />
+          <img
+            src={heroConfig.hero.backgroundMedia.src}
+            alt="Background"
+            className="absolute inset-0 object-cover w-full h-full"
+            style={{
+              clipPath: "inset(0 0 0 50%)", // Right side is sharp
+            }}
+          />
+        </div>
       );
     }
 
@@ -69,32 +86,47 @@ const Hero = () => {
         className={`relative z-10 overflow-hidden pb-8 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[100px] 2xl:pt-[210px] ${heroConfig.hero.backgroundClass}`}
       >
         {renderBackgroundMedia()}
-        {heroConfig.hero.showBackground && <div className="absolute inset-0 bg-white opacity-80 dark:bg-black"></div>}
+        {heroConfig.hero.showBackground && <div className="absolute inset-0 bg-white opacity-10 dark:bg-black dark:opacity-70"></div>}
         <div className="container relative z-10">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  {heroConfig.hero.title}
-                </h1>
+                <div className="bg-white bg-opacity-80 dark:bg-gray-800 dark:bg-opacity-90 p-4 rounded-lg max-w-[500px] mx-auto">
+                  <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                    {heroConfig.hero.title}
+                  </h1>
 
-                {modalConfig.isModalEnabled && (
-                  <Modal isOpen={isModalOpen} onRequestClose={handleCloseModal} contentLabel="Modal">
-                    <ModalContent />
-                  </Modal>
-                )}
+                  {modalConfig.isModalEnabled && (
+                    <Modal isOpen={isModalOpen} onRequestClose={handleCloseModal} contentLabel="Modal">
+                      <ModalContent />
+                    </Modal>
+                  )}
 
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  {heroConfig.hero.description}
-                </p>
+                  <p className="mb-4 text-sm !leading-relaxed text-black dark:text-gray-300 sm:text-md md:text-lg">
+                    {heroConfig.hero.description}
+                  </p>
 
-                {/* Buttons */}
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                  {/* New Section for Benefits */}
+                  <ul className="flex flex-col items-left justify-left space-y-2 mb-6 pl-10">
+                    <li className="flex items-center">
+                      <CheckCircleIcon className="h-6 w-6 text-green-500 dark:text-green-400 mr-2" />
+                      <span className="text-black dark:text-gray-300">Formulare halbautomatisch Ausfüllen</span>
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircleIcon className="h-6 w-6 text-green-500 dark:text-green-400 mr-2" />
+                      <span className="text-black dark:text-gray-300">Durch Praxisinhabern entwickelt</span>
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircleIcon className="h-6 w-6 text-green-500 dark:text-green-400 mr-2" />
+                      <span className="text-black dark:text-gray-300">Datenschutzkonform</span>
+                    </li>
+                  </ul>
+
                   {/* Anrufen Button */}
                   {heroConfig.hero.callToAction.showCallButton && (
                     <Link
                       href={heroConfig.hero.callToAction.callButton.link}
-                      className={`${heroConfig.hero.callToAction.callButton.class} `}
+                      className={`${heroConfig.hero.callToAction.callButton.class} px-6 py-3 text-lg dark:bg-gray-700 dark:text-white`}
                     >
                       {heroConfig.hero.callToAction.callButton.label}
                     </Link>
@@ -104,7 +136,7 @@ const Hero = () => {
                   {heroConfig.hero.callToAction.showWhatsAppChatButton && (
                     <Link
                       href={heroConfig.hero.callToAction.whatsappButton.link}
-                      className={`${heroConfig.hero.callToAction.whatsappButton.class} `}
+                      className={`${heroConfig.hero.callToAction.whatsappButton.class} px-6 py-3 text-lg dark:bg-gray-700 dark:text-white`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -116,7 +148,7 @@ const Hero = () => {
                   {heroConfig.hero.callToAction.showOnlineTerminButton && (
                     <Link
                       href={heroConfig.hero.callToAction.onlineBookingButton.link}
-                      className={`${heroConfig.hero.callToAction.onlineBookingButton.class} `}
+                      className={`${heroConfig.hero.callToAction.onlineBookingButton.class} px-28 pt-3 py-3 text-lg dark:bg-gray-700 dark:text-white`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -124,31 +156,43 @@ const Hero = () => {
                     </Link>
                   )}
                 </div>
+
+                {modalConfig.isModalEnabled && (
+                  <Modal isOpen={isModalOpen} onRequestClose={handleCloseModal} contentLabel="Modal">
+                    <ModalContent />
+                  </Modal>
+                )}
+
+                {/* Buttons */}
+                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
-          <svg
-            width="450"
-            height="556"
-            viewBox="0 0 450 556"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {heroConfig.hero.svgGradientStops.map((gradient, index) => (
-              <defs key={index}>
-                <linearGradient id={gradient.id} x1={gradient.x1} y1={gradient.y1} x2={gradient.x2} y2={gradient.y2} gradientUnits="userSpaceOnUse">
-                  {gradient.colors.map((color, idx) => (
-                    <stop key={idx} offset={color.offset} stopColor={color.stopColor} stopOpacity={color.stopOpacity} />
-                  ))}
-                </linearGradient>
-              </defs>
-            ))}
-            {/* yellow round backgrounds */}
-            {/* <circle cx="277" cy="63" r="225" fill="url(#paint0_linear_25:217)" />
-            <circle cx="17.9997" cy="182" r="18" fill="url(#paint1_radial_25:217)" /> */}
-          </svg>
+
+        <div className="absolute left-0 bottom-0 p-4 m-2 bg-white bg-opacity-95 dark:bg-gray-800 dark:bg-opacity-90 z-10 rounded-lg w-[350px] h-auto">
+          <h3 className="text-lg font-extralight mb-2 text-black dark:text-gray-300" style={{ fontFamily: 'Roboto, sans-serif' }}>Mitgliedschaften und Integrationen</h3> {/* Thinner, softer font */}
+          <div className="flex flex-row items-center space-x-4"> {/* Align logos to top */}
+            <img src="/images/brands/vebmitglied.png" alt="VEB Mitglied" className="h-16 w-14 opacity-100 filter grayscale dark:filter-none" /> {/* Grey overlay removed in dark mode */}
+            <img src="/images/brands/hin.png" alt="HIN Mitglied" className="h-10 w-18 opacity-100 filter grayscale dark:filter-none" /> {/* Grey overlay removed in dark mode */}
+            <img src="/images/brands/swissmadesoftware.png" alt="Swiss Made Software" className="h-16 w-20 opacity-100 filter grayscale dark:filter-none" /> {/* Grey overlay removed in dark mode */}
+          </div>
+        </div>
+
+        <div className="absolute right-0 bottom-0 p-4 m-2 bg-white bg-opacity-95 dark:bg-gray-800 dark:bg-opacity-90 z-10 rounded-lg w-[350px] h-auto">
+          <h3 className="text-lg font-extralight mb-2 text-black dark:text-gray-300" style={{ fontFamily: 'Roboto, sans-serif' }}>Doc Dialog treffen</h3> {/* Thinner, softer font */}
+          <Link href="https://www.ifas-expo.ch/de" target="_blank" rel="noopener noreferrer">
+            <div className="flex flex-row items-center space-x-4 cursor-pointer">
+              <img src="/images/brands/ifas.png" alt="IFAS" className="h-16 opacity-100 filter grayscale dark:filter-none" /> {/* Grey overlay removed in dark mode */}
+              <p className="text-xs text-gray-600 dark:text-gray-400" style={{ fontFamily: 'Roboto, sans-serif' }}>
+                Besuchen Sie uns am<br />
+                23.10.2024, 17 Uhr<br />
+                Halle 7 (IT & Beratung)<br />
+                Stand Nr. E 43 (Axonlab)
+              </p>
+            </div>
+          </Link>
         </div>
       </section>
     </>

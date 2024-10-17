@@ -30,11 +30,21 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="de">
       <head>
+        <script
+          async
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="98bb2639-135c-41cd-ad90-cd6bbea245ef"
+          data-blockingmode="auto"
+          type="text/javascript">
+        </script>
+
         {/* Google Analytics Tag */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-YP0C4PGBG5"
         ></script>
+
         <script
           dangerouslySetInnerHTML={{
             __html: `

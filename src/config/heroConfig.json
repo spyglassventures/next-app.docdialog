@@ -1,19 +1,19 @@
 {
     "hero": {
-        "showBackground": false,
+        "showBackground": true,
         "backgroundClass": "bg-white dark:bg-gray-dark",
         "backgroundMedia": {
-            "type": "video",
+            "type": "image",
             "comment": "can be video or image",
-            "src": "favicon.ico",
+            "src": "/images/about/Dialog3.png",
             "comment2": "Beispiel /images/hero/background.jpg or /images/about/video1.mov  <- nur Bsp",
             "comment3": "favicon.ico can be used as a placeholder picture"
         },
-        "title": "Doc Dialog - Copilot bei der Praxisadministration",
-        "description": "Reduzieren Sie den administrativen Aufwand in Ihrer Praxis und konzentrieren Sie sich auf Ihre Patienten. Doc Dialog ist Ihr digitaler Copilot für die Praxisadministration.",
+        "title": "Mehr Zeit für Patienten",
+        "description": "Weniger administrativen Aufwand in Ihrer Praxis. Ihr digitaler Copilot für die Praxisadministration.",
         "callToAction": {
-            "showCallButton": true,
-            "showWhatsAppChatButton": true,
+            "showCallButton": false,
+            "showWhatsAppChatButton": false,
             "showOnlineTerminButton": true,
             "callButton": {
                 "label": "Anrufen",

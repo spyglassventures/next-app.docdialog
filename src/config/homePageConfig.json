@@ -6,7 +6,7 @@
     "modules": {
         "ScrollUp": true,
         "Hero": true,
-        "NewsTicker": true,
+        "NewsTicker": false,
         "Benefits": true,
         "VideoTestimonials": true,
         "AboutSectionTwo": false,
