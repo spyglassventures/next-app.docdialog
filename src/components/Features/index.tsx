@@ -61,7 +61,7 @@ const Features = () => {
       </section>
 
       {/* Video Feature Section */}
-      <section id="video-feature" className="py-10 bg-gray-100">
+      <section id="video-feature" className="py-5 bg-gray-100">
         <div className="container">
           <SectionTitle
             title="Automatisierte Berichte mit Doc Dialog"
@@ -69,7 +69,7 @@ const Features = () => {
             center
           />
 
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-center space-x-2">
             {videos.map((video, index) => (
               <div key={index} className="w-full max-w-xs">
                 <video

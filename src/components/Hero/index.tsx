@@ -114,11 +114,11 @@ const Hero = () => {
                     </li>
                     <li className="flex items-center">
                       <CheckCircleIcon className="h-6 w-6 text-green-500 dark:text-green-400 mr-2" />
-                      <span className="text-black dark:text-gray-300">Durch Praxisinhabern entwickelt</span>
+                      <span className="text-black dark:text-gray-300">Durch Praxisinhaber und MPAs entwickelt</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircleIcon className="h-6 w-6 text-green-500 dark:text-green-400 mr-2" />
-                      <span className="text-black dark:text-gray-300">Datenschutzkonform</span>
+                      <span className="text-black dark:text-gray-300">Datenschutzkonform Schweiz</span>
                     </li>
                   </ul>
 
