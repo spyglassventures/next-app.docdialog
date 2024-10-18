@@ -31,13 +31,13 @@ const VideoTestimonials = () => {
 
                 <div className="flex justify-center">
                     {videoData.map((video) => (
-                        <div key={video.id} className="w-full flex justify-center">
+                        <div key={video.id} className="w-full flex flex-col items-center">
                             <div className="mb-2">
-                                {/* Use YouTube embed iframe */}
+                                {/* Centered YouTube embed iframe */}
                                 <iframe
                                     className="rounded-lg shadow-lg"
-                                    width="1280"  // Double of 640
-                                    height="720"  // Double of 360
+                                    width="800"  // Adjusted size
+                                    height="600"  // Adjusted size
                                     src={video.url}
                                     title={video.title}
                                     frameBorder="0"
@@ -45,6 +45,7 @@ const VideoTestimonials = () => {
                                     allowFullScreen
                                 ></iframe>
                             </div>
+                            {/* Title directly below the video */}
                             <h3 className="text-lg font-bold text-black dark:text-white text-center mt-4">
                                 {video.title}
                             </h3>
