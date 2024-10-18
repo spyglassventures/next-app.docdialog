@@ -69,8 +69,8 @@ const Benefits = () => {
         },
         {
             id: 6,
-            name: "Dr. med. Georg Fischer",
-            designation: "Praxisinhaber, FA für Allgemeinmedizin, Zürich",
+            name: "Dr. med. G. Fischer",
+            designation: "Praxisinhaber, Zürich",
             content:
                 "Das KI-Tool hat meine Praxis effizienter gemacht und unterstützt mich vielseitig.",
             image: "/images/testimonials/DrFischer.png",

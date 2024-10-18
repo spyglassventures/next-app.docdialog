@@ -80,6 +80,7 @@ const Features = () => {
                   className="w-full h-auto mb-4 rounded-lg shadow-lg"
                   muted
                   loop
+                  playsInline // Ensure the video remains embedded and doesn't go full screen on mobile
                 />
                 <h3 className="text-lg font-bold text-black dark:text-white text-center mb-2">
                   {video.title}

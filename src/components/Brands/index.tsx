@@ -64,7 +64,7 @@ const Brands = () => {
       <div className="container">
         <div className="flex justify-center">
           <h1 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
-            Doc Dialog ist im Einsatz bei
+            Im Einsatz bei
           </h1>
         </div>
         <div className="-mx-6 flex flex-wrap">
