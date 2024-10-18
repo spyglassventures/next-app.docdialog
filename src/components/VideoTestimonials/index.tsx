@@ -4,19 +4,20 @@ const VideoTestimonials = () => {
     const videoData = [
         {
             id: 1,
-            title: "Dr. Müller spart Zeit mit Doc Dialog",
-            url: "https://www.youtube.com/embed/nXFuKdzkivc", // Correct embed format
-        },
-        {
-            id: 2,
-            title: "Vorstellung Doc Dialog",
-            url: "https://www.youtube.com/embed/nXFuKdzkivc", // Correct embed format
-        },
-        {
-            id: 3,
             title: "Dr. Berg erzählt von seinen Erfahrungen",
             url: "https://www.youtube.com/embed/nXFuKdzkivc", // Correct embed format
         }
+        // ,
+        // {
+        //     id: 2,
+        //     title: "Vorstellung Doc Dialog",
+        //     url: "https://www.youtube.com/embed/nXFuKdzkivc", // Correct embed format
+        // },
+        // {
+        //     id: 3,
+        //     title: "Dr. Berg erzählt von seinen Erfahrungen",
+        //     url: "https://www.youtube.com/embed/nXFuKdzkivc", // Correct embed format
+        // }
     ];
 
     return (
@@ -24,19 +25,19 @@ const VideoTestimonials = () => {
             <div className="container">
                 <SectionTitle
                     title="Was Ärzte sagen"
-                    paragraph="Hören Sie, was Ärzte und ihre Teams über die Arbeit mit Doc Dialog sagen."
+                    paragraph="Hören Sie, was Ärzte und ihre Teams über die Arbeit mit Doc Dialog sagen. Weitere Videos in Kürze hier zu finden"
                     center
                 />
 
-                <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+                <div className="flex justify-center">
                     {videoData.map((video) => (
-                        <div key={video.id} className="w-full">
-                            <div className="video-wrapper mb-2">
+                        <div key={video.id} className="w-full flex justify-center">
+                            <div className="mb-2">
                                 {/* Use YouTube embed iframe */}
                                 <iframe
-                                    className="w-full rounded-lg shadow-lg"
-                                    width="100%"
-                                    height="315"
+                                    className="rounded-lg shadow-lg"
+                                    width="1280"  // Double of 640
+                                    height="720"  // Double of 360
                                     src={video.url}
                                     title={video.title}
                                     frameBorder="0"
@@ -44,7 +45,7 @@ const VideoTestimonials = () => {
                                     allowFullScreen
                                 ></iframe>
                             </div>
-                            <h3 className="text-lg font-bold text-black dark:text-white">
+                            <h3 className="text-lg font-bold text-black dark:text-white text-center mt-4">
                                 {video.title}
                             </h3>
                         </div>
