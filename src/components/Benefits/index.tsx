@@ -25,7 +25,7 @@ const Benefits = () => {
     // Testimonials reduced to one sentence
     const leftTestimonials = [
         {
-            id: 1,
+            id: 2,
             name: "Dr. med. C. Berg",
             designation: "Praxisinhaber, St. Gallen",
             image: "/images/testimonials/DrBerg.jpg",
@@ -33,7 +33,7 @@ const Benefits = () => {
                 "Das KI-Tool hilft mir täglich bei der Patientenbetreuung und spart Zeit.",
         },
         {
-            id: 2,
+            id: 1,
             name: "A. Bergmann",
             designation: "MPA Leitung, Zürich",
             image: "/images/testimonials/Angelika.jpg",
@@ -89,7 +89,7 @@ const Benefits = () => {
             setTimeout(() => {
                 setLeftTestimonialIndex((prevIndex) => (prevIndex + 1) % leftTestimonials.length);
                 setIsLeftVisible(true); // Slowly show new left testimonial
-            }, 2000);
+            }, 2000); // fading effect duration
 
             setTimeout(() => {
                 setIsRightVisible(false); // Hide right testimonial before switching
@@ -98,7 +98,7 @@ const Benefits = () => {
                     setIsRightVisible(true); // Slowly show new right testimonial
                 }, 2000); // Delay the right side change by 2 seconds
             }, 3000);
-        }, 10000); // Change every 10 seconds
+        }, 8000); // Change every 10 seconds
 
         return () => clearInterval(interval);
     }, [leftTestimonials.length, rightTestimonials.length]);
@@ -108,16 +108,16 @@ const Benefits = () => {
 
     return (
         <section id="benefits" className="py-6 md:py-10 lg:py-18 relative">
-            <div className="container relative z-10">
+            <div className="container relative z-10 pt-8 sm:pt-16">
                 <SectionTitle title="Warum Doc Dialog?" paragraph="" center />
 
-                <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-3">
+                <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-3">
                     {benefitsData.map((benefit) => (
                         <div key={benefit.id} className="text-center">
-                            <h3 className="text-4xl font-bold text-primary mb-2">
+                            <h3 className="text-2xl sm:text-4xl font-bold text-primary mb-1 sm:mb-2">
                                 {benefit.value}
                             </h3>
-                            <p className="text-base font-medium text-body-color">
+                            <p className="text-sm sm:text-base font-medium text-body-color">
                                 {benefit.description}
                             </p>
                         </div>
@@ -125,34 +125,40 @@ const Benefits = () => {
                 </div>
             </div>
 
+
             {/* Left Testimonial */}
             <div
-                className={`absolute left-0 top-10 md:top-0 w-96 md:w-100 p-4 rounded-lg transition-opacity duration-1000 ease-in-out ${isLeftVisible ? "opacity-100" : "opacity-0"
+                className={`absolute left-0 top-10 md:top-0 w-96 md:w-100 pt-12 pl-6 sm:pl-12 rounded-lg transition-opacity duration-1000 ease-in-out ${isLeftVisible ? "opacity-100" : "opacity-0"
                     }`}
             >
+
                 <div className="flex items-center space-x-4">
-                    <Image
-                        src={leftTestimonial.image}
-                        alt={leftTestimonial.name}
-                        width={48}
-                        height={48}
-                        className="rounded-full"
-                    />
+                    <div className="max-sm:pl-12 max-sm:pt-2">
+                        <Image
+                            src={leftTestimonial.image}
+                            alt={leftTestimonial.name}
+                            width={48}
+                            height={48}
+                            className="rounded-full"
+                        />
+                    </div>
                     <div>
-                        <h4 className="font-light text-lg">{leftTestimonial.name}</h4>
+                        <h4 className="font-light text-lg ">{leftTestimonial.name}</h4>
                         <p className="text-sm text-gray-600 font-light">
                             {leftTestimonial.designation}
                         </p>
                     </div>
                 </div>
-                <p className="mt-2 text-xs italic text-gray-400 leading-tight font-light">
+                <p className="mt-2 text-xs italic text-gray-400 leading-tight font-light text-center sm:text-left pr-4">
                     &quot;{leftTestimonial.content}&quot;
                 </p>
+
             </div>
+
 
             {/* Right Testimonial */}
             <div
-                className={`absolute right-0 top-10 md:top-0 w-96 md:w-100 p-4 rounded-lg transition-opacity duration-1000 ease-in-out ${isRightVisible ? "opacity-100" : "opacity-0"
+                className={`hidden sm:block absolute right-0 top-10 md:top-0 w-96 md:w-100 p-4 pt-8 rounded-lg transition-opacity duration-1000 ease-in-out ${isRightVisible ? "opacity-100" : "opacity-0"
                     }`}
             >
                 <div className="flex items-center space-x-4">
@@ -174,6 +180,7 @@ const Benefits = () => {
                     &quot;{rightTestimonial.content}&quot;
                 </p>
             </div>
+
 
 
         </section>

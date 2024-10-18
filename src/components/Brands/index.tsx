@@ -70,7 +70,7 @@ const Brands = () => {
         <div className="-mx-6 flex flex-wrap">
           <div className="w-full px-1">
             <div
-              className={`flex items-center justify-center space-x-6 overflow-x-auto whitespace-nowrap bg-gray-light px-10 py-18 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px] ${isVisible ? 'opacity-100 transition-opacity duration-500 delay-500' : 'opacity-0'
+              className={`grid grid-cols-3 gap-4 overflow-x-auto bg-gray-light px-4 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px] ${isVisible ? 'opacity-100 transition-opacity duration-500 delay-500' : 'opacity-0'
                 }`}
             >
               {brandsData.map((brand) => (
@@ -89,6 +89,7 @@ const Brands = () => {
         </div>
       </div>
     </section>
+
 
 
 
