@@ -69,7 +69,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Datenschutzkonformes Patientendatenmanagement",
-    paragraph: "Effizientes Management von Patientendaten und medizinischen Unterlagen. Patientendaten verlassen nicht Ihren PC. Unsere KI hilft, Informationen in ein strukturierstes Format zu bringen."
+    paragraph: "Effizientes Management von Patientendaten und medizinischen Unterlagen. Patientendaten verlassen nicht Ihren PC. Unsere KI hilft, Informationen in ein strukturiertes Format zu bringen."
   },
   {
     id: 6,

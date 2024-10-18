@@ -117,7 +117,7 @@ const Hero = () => {
                   <ul className="flex flex-col items-start space-y-2 mb-6 pl-4 sm:pl-10">
                     <li className="flex items-center">
                       <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />
-                      <span className="text-sm text-left sm:text-base text-black dark:text-gray-300">Formulare halbautomatisch Ausfüllen</span>
+                      <span className="text-sm text-left sm:text-base text-black dark:text-gray-300">Formulare halbautomatisch ausfüllen</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />

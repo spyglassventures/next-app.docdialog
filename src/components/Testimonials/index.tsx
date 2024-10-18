@@ -26,7 +26,7 @@ const testimonialData: Testimonial[] = [
     name: "Dr. med. Christoph Rosenbaum",
     designation: "Praxisinhaber, FA für Chirurgie und Herzchirurgie, Zürich",
     content:
-      "Formulare blieben früher immer mal liegen bei uns. Mit Doc Dialog macht es Spass und ich brauche nur noch 10% der Zeit AHV und KTG Formulare auszufüllen. Das System übernimmt einen Großteil der Arbeit.  Besonders gefällt mir, wie nahtlos das Tool in den Praxisablauf integriert ist, keine Unterbrechungen, alles auf einer Seite.",
+      "Bei uns blieben Formulare immer mal liegen. Mit Doc Dialog macht es Spass und ich brauche nur noch 10% der Zeit AHV und KTG Formulare auszufüllen. Das System übernimmt einen Großteil der Arbeit.  Besonders gefällt mir, wie nahtlos das Tool in den Praxisablauf integriert ist, keine Unterbrechungen, alles auf einer Seite.",
     image: "/images/testimonials/DrRosenbaum.png",
     star: 5,
   },
