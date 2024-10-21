@@ -98,7 +98,7 @@ const Benefits = () => {
                     setIsRightVisible(true); // Slowly show new right testimonial
                 }, 2000); // Delay the right side change by 2 seconds
             }, 3000);
-        }, 8000); // Change every 10 seconds
+        }, 10000); // Change every 10 seconds
 
         return () => clearInterval(interval);
     }, [leftTestimonials.length, rightTestimonials.length]);
@@ -143,13 +143,13 @@ const Benefits = () => {
                         />
                     </div>
                     <div>
-                        <h4 className="font-light text-lg ">{leftTestimonial.name}</h4>
-                        <p className="text-sm text-gray-600 font-light">
+                        <h4 className="font-light text-m text-gray-600 dark:text-gray-400 ">{leftTestimonial.name}</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 font-light">
                             {leftTestimonial.designation}
                         </p>
                     </div>
                 </div>
-                <p className="mt-2 text-xs italic text-gray-400 leading-tight font-light text-center sm:text-left pr-4">
+                <p className="mt-2 text-xs italic text-black dark:text-white leading-tight font-light text-center sm:text-left pr-4">
                     &quot;{leftTestimonial.content}&quot;
                 </p>
 
@@ -170,13 +170,13 @@ const Benefits = () => {
                         className="rounded-full"
                     />
                     <div>
-                        <h4 className="font-light text-lg">{rightTestimonial.name}</h4>
-                        <p className="text-sm text-gray-600 font-light">
+                        <h4 className="font-light text-lg text-gray-600 dark:text-gray-400">{rightTestimonial.name}</h4>
+                        <p className="text-sm text-gray-600 font-light dark:text-gray-400">
                             {rightTestimonial.designation}
                         </p>
                     </div>
                 </div>
-                <p className="mt-2 text-xs italic text-gray-400 leading-tight font-light">
+                <p className="mt-2 text-xs italic  text-black dark:text-white  leading-tight font-light">
                     &quot;{rightTestimonial.content}&quot;
                 </p>
             </div>

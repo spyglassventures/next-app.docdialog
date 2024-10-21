@@ -31,13 +31,11 @@ const VideoTestimonials = () => {
 
                 <div className="flex justify-center">
                     {videoData.map((video) => (
-                        <div key={video.id} className="w-full flex flex-col items-center">
-                            <div className="mb-2">
+                        <div key={video.id} className="w-full flex flex-col items-center sm:w-full">
+                            <div className="mb-2 relative w-full" style={{ paddingBottom: '75%' }}> {/* Aspect Ratio 4:3 */}
                                 {/* Centered YouTube embed iframe */}
                                 <iframe
-                                    className="rounded-lg shadow-lg"
-                                    width="800"  // Adjusted size
-                                    height="600"  // Adjusted size
+                                    className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
                                     src={video.url}
                                     title={video.title}
                                     frameBorder="0"
