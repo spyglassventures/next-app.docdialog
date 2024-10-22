@@ -2,10 +2,24 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Modal from "@/components/Modal";
+import AboutSectionOne from "@/components/About/AboutSectionOne";
+import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import Openinghours from "@/components/About/Openinghours";
+import Brands from "@/components/Brands";
+import ScrollUp from "@/components/Common/ScrollUp";
+import Features from "@/components/Features";
+import Hero from "@/components/Hero";
+import NewsTicker from "@/components/Hero/NewsTicker";
+import Benefits from "@/components/Benefits";
+import VideoTestimonials from "@/components/VideoTestimonials";
+import Testimonials from "@/components/Testimonials";
+import Pricing from "@/components/Pricing";
+import Contact from "@/components/Contact";
 import ifasConfig from "@/config/ifasConfig.json";
 import modalConfig from "@/config/modalConfig.json";
+import homePageConfig from "@/config/homePageConfig.json";
 
-const ServicesPage = () => {
+const IfasPage = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
@@ -26,15 +40,18 @@ const ServicesPage = () => {
     }
   }, []);
 
+  const { modules } = homePageConfig;
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-800 py-10">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-800 py-12 ">
       {/* Centered Image and Text */}
-      <div className="text-center max-w-lg bg-white dark:bg-gray-900 p-10 rounded-lg shadow-lg">
+      <div className="text-center max-w-lg bg-white dark:bg-gray-900 p-12 rounded-lg shadow-lg">
         <img
           src="/images/about/DanielM.jpg"
           alt="Daniel Müller - Gründer von Doc Dialog"
-          className="mx-auto rounded-lg mb-6 w-64 h-auto"
+          className="mx-auto rounded-lg mb-2 w-64 h-auto"
         />
+        <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">Dr. sc. Daniel Müller gibt praktische Tipps zur Nutzung von Künstlicher Intelligenz beim Grundversorger</p> {/* Small text added here */}
         <p className="text-2xl font-semibold mb-4">Treffe den Gründer von Doc Dialog</p>
         <p className="text-lg mb-6">
           Live Demo auf der IFAS<br />
@@ -78,10 +95,21 @@ const ServicesPage = () => {
         </div>
       </div>
 
+      {/* Additional Components */}
+      {modules.ScrollUp && <ScrollUp />}
     
-      
+      {modules.Benefits && <Benefits />}
+      {modules.VideoTestimonials && <VideoTestimonials />}
+      {modules.AboutSectionTwo && <AboutSectionTwo />}
+      {modules.Openinghours && <Openinghours />}
+      {modules.Features && <Features />}
+      {modules.Brands && <Brands />}
+      {modules.AboutSectionOne && <AboutSectionOne />}
+      {modules.Testimonials && <Testimonials />}
+      {modules.Pricing && <Pricing />} 
+      {/* {modules.Contact && <Contact />} */}
     </div>
   );
 };
 
-export default ServicesPage;
+export default IfasPage;
