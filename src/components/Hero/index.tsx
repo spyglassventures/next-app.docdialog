@@ -51,7 +51,7 @@ const IfasPage = () => {
           alt="Daniel Müller - Gründer von Doc Dialog"
           className="mx-auto rounded-lg mb-2 w-64 h-auto"
         />
-        <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">Dr. sc. Daniel Müller</p> {/* Small text added here */}
+        <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">Dr. sc. Daniel Müller gibt praktische Tipps zur Nutzung von Künstlicher Intelligenz beim Grundversorger</p> {/* Small text added here */}
         <p className="text-2xl font-semibold mb-4">Treffe den Gründer von Doc Dialog</p>
         <p className="text-lg mb-6">
           Live Demo auf der IFAS<br />
