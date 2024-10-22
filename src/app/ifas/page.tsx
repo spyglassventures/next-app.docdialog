@@ -35,13 +35,14 @@ const ServicesPage = () => {
           alt="Daniel Müller - Gründer von Doc Dialog"
           className="mx-auto rounded-lg mb-6 w-64 h-auto"
         />
-        <p className="text-2xl font-semibold mb-4">Treffe den Gründer von Doc Dialog auf der IFAS</p>
+        <p className="text-2xl font-semibold mb-4">Treffe den Gründer von Doc Dialog</p>
         <p className="text-lg mb-6">
           Live Demo auf der IFAS<br />
           Besuchen Sie uns am<br />
           <strong>23.10.2024, 17 Uhr</strong><br />
           Halle 7 (IT & Beratung)<br />
           Stand Nr. E 43 (Axonlab)
+          oder vereinbaren Sie einen Termin mit uns.
         </p>
 
         {/* Call-to-action buttons */}
