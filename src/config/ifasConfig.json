@@ -1,0 +1,75 @@
+{
+    "hero": {
+        "showBackground": true,
+        "backgroundClass": "bg-white dark:bg-gray-dark",
+        "backgroundMedia": {
+            "type": "image",
+            "comment": "can be video or image",
+            "src": "/images/about/Dialog3.png",
+            "comment2": "Beispiel /images/hero/background.jpg or /images/about/video1.mov  <- nur Bsp",
+            "comment3": "favicon.ico can be used as a placeholder picture"
+        },
+        "title": "Mehr Zeit für Patienten",
+        "description": "Weniger administrativen Aufwand in Ihrer Praxis. Ihr digitaler Copilot für die Praxisadministration.",
+        "callToAction": {
+            "showCallButton": false,
+            "showWhatsAppChatButton": true,
+            "showOnlineTerminButton": true,
+            "callButton": {
+                "label": "Anrufen",
+                "link": "tel:+41798329298",
+                "class": "ease-in duration-300 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-80"
+            },
+            "whatsappButton": {
+                "label": "Schreiben Sie uns per WhatsApp",
+                "link": "https://wa.me/41798329298/?text=Liebes%20DocDialog%20Team,%20Ich%20",
+                "class": "ease-in duration-300 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded w-80"
+            },
+            "onlineBookingButton": {
+                "label": "Treffen auf IFAS  buchen",
+                "link": "https://calendly.com/doc-dialog/30min",
+                "class": "ease-in duration-300 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-80"
+            }
+        },
+        "svgGradientStops": [
+            {
+                "id": "paint0_linear_25:217",
+                "x1": "-54.5003",
+                "y1": "-178",
+                "x2": "222",
+                "y2": "288",
+                "colors": [
+                    {
+                        "offset": "0",
+                        "stopColor": "#FFD700",
+                        "comment": "FFD700 is gold/yellow"
+                    },
+                    {
+                        "offset": "1",
+                        "stopColor": "#FFD700",
+                        "stopOpacity": "0"
+                    }
+                ]
+            },
+            {
+                "id": "paint1_radial_25:217",
+                "cx": "0",
+                "cy": "0",
+                "r": "1",
+                "gradientTransform": "translate(17.9997 182) rotate(90) scale(18)",
+                "colors": [
+                    {
+                        "offset": "0.145833",
+                        "stopColor": "#FFD700",
+                        "stopOpacity": "0"
+                    },
+                    {
+                        "offset": "1",
+                        "stopColor": "#FFD700",
+                        "stopOpacity": "0.08"
+                    }
+                ]
+            }
+        ]
+    }
+}
