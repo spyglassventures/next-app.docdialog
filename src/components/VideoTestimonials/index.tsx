@@ -5,7 +5,7 @@ const VideoTestimonials = () => {
         {
             id: 1,
             title: "Dr. Berg erzählt von seinen Erfahrungen",
-            url: "https://www.youtube.com/embed/nXFuKdzkivc", // Correct embed format
+            url: "https://www.youtube.com/playlist?list=PLTsg9q-3EH6cDZ7h5ZxE2BSD1hZXrArFE", // Correct embed format
         }
         // ,
         // {
