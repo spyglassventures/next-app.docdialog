@@ -44,6 +44,7 @@ const Footer = () => {
                       <li key={idx}>
                         <Link
                           href={link.href}
+                          target={link.newTab ? "_blank" : "_self"}
                           className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                         >
                           {link.text}

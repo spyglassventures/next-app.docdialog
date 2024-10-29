@@ -14,6 +14,16 @@
                 {
                     "href": "/about",
                     "text": "Unser Team"
+                },
+                {
+                    "href": "https://www.instagram.com/docdialogch/ ",
+                    "text": "Instagram",
+                    "newTab": true
+                },
+                {
+                    "href": "https://www.facebook.com/profile.php?id=61567364428074 ",
+                    "text": "Facebook",
+                    "newTab": true
                 }
             ]
         },

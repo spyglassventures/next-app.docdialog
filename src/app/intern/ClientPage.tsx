@@ -1,7 +1,5 @@
 // src/app/intern/ClientPage.tsx
 
-// NAVIGATION
-
 'use client';
 import { useState, useEffect } from 'react';
 import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react';
@@ -16,7 +14,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-// For google Tag Manager
+// For Google Tag Manager
 declare global {
   interface Window {
     dataLayer: any[];
@@ -25,6 +23,7 @@ declare global {
 
 export default function ClientPage() {
   const [activeComponent, setActiveComponent] = useState('diagnose');
+  const [previousComponent, setPreviousComponent] = useState<string | null>(null);
   const ActiveComponent = getActiveComponent(activeComponent);
 
   const getButtonClass = (component) => {
@@ -34,24 +33,31 @@ export default function ClientPage() {
   const [showTicker, setShowTicker] = useState(true);
 
   useEffect(() => {
-    // Check if window.dataLayer exists and log accordingly
+    // Push to dataLayer with both previous and current components
     if (window.dataLayer) {
-      console.log('Pushing component change to dataLayer:', activeComponent);
+      console.log('Pushing component change to dataLayer:', {
+        previousComponent,
+        activeComponent
+      });
       window.dataLayer.push({
         event: 'component_change',
-        component: activeComponent,
+        component: activeComponent, // Current component
+        previous_component: previousComponent, // Previous component
       });
     } else {
       console.warn('dataLayer is not available on the window object.');
     }
-  }, [activeComponent]);
+  }, [activeComponent, previousComponent]);
 
-
+  const handleComponentChange = (newComponent) => {
+    setPreviousComponent(activeComponent); // Set current as previous before updating
+    setActiveComponent(newComponent);
+  };
 
   return (
     <>
       <section className="pb-3">
-        {/* {showTicker && (
+        {showTicker && (
           <div className="container p-3">
             <div className="ticker-ad rounded shadow-lg relative">
               <div className="ticker-wrapper">
@@ -62,7 +68,7 @@ export default function ClientPage() {
               </button>
             </div>
           </div>
-        )} */}
+        )}
         <div className="container mx-auto px-4">
           <div className="mt-4 flex flex-wrap justify-between gap-2">
             {NAV_ITEMS.mainComponents
@@ -70,7 +76,7 @@ export default function ClientPage() {
               .map(({ key, name }) => (
                 <button
                   key={key}
-                  onClick={() => setActiveComponent(key)}
+                  onClick={() => handleComponentChange(key)} // Use handler to track changes
                   className={`px-4 py-2 rounded ${getButtonClass(key)}`}
                   style={{ flex: '1 1 20%' }}
                 >
@@ -78,6 +84,7 @@ export default function ClientPage() {
                 </button>
               ))}
 
+            {/* Tools Dropdown */}
             <Menu as="div" className="relative inline-block text-left" style={{ flex: '1 1 20%' }}>
               <div>
                 <MenuButton className="inline-flex items-center px-4 py-2 text-white bg-gray-400 rounded hover:bg-amber-500 w-full">
@@ -91,17 +98,17 @@ export default function ClientPage() {
                     {NAV_ITEMS.toolsDropdown
                       .filter(item => item.visible)
                       .map(({ key, name }) => {
-                        const Icon = ICONS[key]; // Get the icon from ICONS
+                        const Icon = ICONS[key];
                         return (
                           <MenuItem key={key}>
                             {({ active }) => (
                               <a
                                 href="#"
-                                onClick={() => setActiveComponent(key)}
+                                onClick={() => handleComponentChange(key)}
                                 className={classNames(active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'flex justify-between items-center px-4 py-2 text-sm')}
                               >
                                 <span>{name}</span>
-                                {Icon && <Icon className="ml-2 h-5 w-5" aria-hidden="true" />} {/* Render the icon if it exists */}
+                                {Icon && <Icon className="ml-2 h-5 w-5" aria-hidden="true" />}
                               </a>
                             )}
                           </MenuItem>
@@ -109,11 +116,10 @@ export default function ClientPage() {
                       })}
                   </div>
                 </MenuItems>
-
               </Transition>
             </Menu>
 
-            {/* formsDropdown Dropdown */}
+            {/* Forms Dropdown */}
             <Menu as="div" className="relative inline-block text-left" style={{ flex: '1 1 20%' }}>
               <div>
                 <MenuButton className="inline-flex items-center px-4 py-2 text-white bg-gray-400 rounded hover:bg-amber-500 w-full">
@@ -131,7 +137,7 @@ export default function ClientPage() {
                           {({ active }) => (
                             <a
                               href="#"
-                              onClick={() => setActiveComponent(key)}
+                              onClick={() => handleComponentChange(key)}
                               style={{ display: 'block', padding: '10px' }}
                             >
                               {name}
@@ -144,7 +150,7 @@ export default function ClientPage() {
               </Transition>
             </Menu>
 
-            {/* Repeat for other dropdowns */}
+            {/* Media KI Dropdown */}
             <Menu as="div" className="relative inline-block text-left" style={{ flex: '1 1 20%' }}>
               <div>
                 <MenuButton className="inline-flex items-center px-4 py-2 text-white bg-gray-400 rounded hover:bg-amber-500 w-full">
@@ -162,7 +168,7 @@ export default function ClientPage() {
                           {({ active }) => (
                             <a
                               href="#"
-                              onClick={() => setActiveComponent(key)}
+                              onClick={() => handleComponentChange(key)}
                               className={classNames(active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm')}
                             >
                               {name}
@@ -175,7 +181,7 @@ export default function ClientPage() {
               </Transition>
             </Menu>
 
-            {/* Interne Dokumente logic */}
+            {/* Internal Documents Dropdown */}
             <Menu as="div" className="relative inline-block text-left" style={{ flex: '1 1 20%' }}>
               <div>
                 <MenuButton className="inline-flex items-center px-4 py-2 text-white bg-gray-400 rounded hover:bg-amber-500 w-full">
@@ -195,7 +201,7 @@ export default function ClientPage() {
                             {({ active }) => (
                               <a
                                 href="#"
-                                onClick={() => setActiveComponent(key)}
+                                onClick={() => handleComponentChange(key)}
                                 className={classNames(
                                   active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                                   'flex justify-between items-center px-4 py-2 text-sm'
