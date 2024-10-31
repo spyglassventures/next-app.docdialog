@@ -22,7 +22,7 @@ const ThankYouPage = () => {
         if (pathname) {
             // Define custom content based on the slug in pathname
             if (pathname.includes("calendly")) {
-                setCustomContent(<p>Wir freuen uns auf unser bevorstehendes Gespräch!</p>);
+                setCustomContent(<p>Ich freue mich auf unser bevorstehendes Gespräch!</p>);
             } else if (pathname.includes("facebook")) {
                 setCustomContent(
                     <p>Vielen Dank, dass Sie uns über Facebook kontaktiert haben!</p>
