@@ -29,23 +29,23 @@ const ThankYouPage = () => {
                 );
             } else if (pathname.includes("instagram")) {
                 setCustomContent(
-                    <p>Vielen Dank, dass Sie uns über Instagram kontaktiert haben!</p>
+                    <p>Vielen Dank, dass Sie mich über Instagram kontaktiert haben!</p>
                 );
             } else if (pathname.includes("messe")) {
                 setCustomContent(
-                    <p>Wir freuen uns, Sie auf der Messe zu treffen!</p>
+                    <p>Ich freue mich, Sie auf der Messe zu treffen!</p>
                 );
             } else if (pathname.includes("linkedin")) {
                 setCustomContent(
-                    <p>Vielen Dank, dass Sie uns über LinkedIn kontaktiert haben!</p>
+                    <p>Vielen Dank, dass Sie mich über LinkedIn kontaktiert haben!</p>
                 );
             } else if (pathname.includes("whatsapp")) {
                 setCustomContent(
-                    <p>Vielen Dank, dass Sie uns über WhatsApp kontaktiert haben!</p>
+                    <p>Vielen Dank, dass Sie mich über WhatsApp kontaktiert haben!</p>
                 );
             } else if (pathname.includes("email")) {
                 setCustomContent(
-                    <p>Danke, dass Sie uns über unsere E-Mail kontaktiert haben!</p>
+                    <p>Danke, dass Sie mich über unsere E-Mail kontaktiert haben!</p>
                 );
             } else if (pathname.includes("referral")) {
                 setCustomContent(
