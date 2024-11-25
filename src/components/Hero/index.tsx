@@ -180,10 +180,11 @@ const Hero = () => {
               <h3 className="text-lg font-extralight mb-2 text-black text-center sm:text-left dark:text-gray-300" style={{ fontFamily: 'Roboto, sans-serif' }}>
                 Mitgliedschaften und Integrationen
               </h3>
-              <div className="flex flex-row items-center justify-center space-x-4">
+              <div className="flex flex-row items-center justify-center space-x-4 pl-8">
                 <img src="/images/brands/vebmitglied.png" alt="VEB Mitglied" className="h-16 w-14 opacity-100 filter grayscale dark:filter-none" />
                 <img src="/images/brands/hin.png" alt="HIN Mitglied" className="h-10 w-18 opacity-100 filter grayscale dark:filter-none" />
                 <img src="/images/brands/swissmadesoftware.png" alt="Swiss Made Software" className="h-16 w-20 opacity-100 filter grayscale dark:filter-none" />
+                {/* <img src="/images/brands/healthtechcluster.png" alt="Health Tech Cluster" className="h-16 w-30 opacity-100 filter grayscale dark:filter-none" /> */}
               </div>
             </div>
 
