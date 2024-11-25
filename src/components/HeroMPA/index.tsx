@@ -109,7 +109,7 @@ const Hero = () => {
                   />
                   <div>
                     <p className="text-xs text-gray-700 dark:text-gray-300">
-                      "Früher sind IV-Anfragen und Rückweisungen bei uns leider liegen geblieben. Heute übernimmt das Tool die meiste Arbeit"
+                      Früher sind IV-Anfragen und Rückweisungen bei uns leider liegen geblieben. Heute übernimmt das Tool die meiste Arbeit
                     </p>
                     <h4 className="mt-1 text-sm font-bold text-black dark:text-white">
                       Angelika Bergmann
@@ -139,7 +139,7 @@ const Hero = () => {
                   />
                   <div>
                     <p className="text-xs text-gray-700 dark:text-gray-300">
-                      "Mehr Arbeitszufriedenheit bei meinen MPAs, weniger Überstunden, weniger Rückfragen. Nur zu empfehlen!"
+                      Mehr Arbeitszufriedenheit bei meinen MPAs, weniger Überstunden, weniger Rückfragen. Nur zu empfehlen!
                     </p>
                     <h4 className="mt-1 text-sm font-bold text-black dark:text-white">
                       Dr. med. Helmut Eckardt

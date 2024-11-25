@@ -108,8 +108,8 @@ const Hero = () => {
                   />
                   <div>
                     <p className="text-xs text-gray-700 dark:text-gray-300">
-                      "Das KI-Tool hat meine Praxis effizienter gemacht. Die
-                      automatisierte Erstellung von Formularen spart enorm Zeit."
+                      Das KI-Tool hat meine Praxis effizienter gemacht. Die
+                      automatisierte Erstellung von Formularen spart enorm Zeit.
                     </p>
                     <h4 className="mt-1 text-sm font-bold text-black dark:text-white">
                       Dr. med. Christoph Berg
@@ -135,7 +135,7 @@ const Hero = () => {
                   />
                   <div>
                     <p className="text-xs text-gray-700 dark:text-gray-300">
-                      "Ich hab keine Zeit und Lust neue Software zu erlernen. Aber DocDialog ist so einfach, dass ich es sofort verstanden habe."
+                      Ich hab keine Zeit und Lust neue Software zu erlernen. Aber DocDialog ist so einfach, dass ich es sofort verstanden habe.
                     </p>
                     <h4 className="mt-1 text-sm font-bold text-black dark:text-white">
                       Dr. med. Christoph Berg
