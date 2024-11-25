@@ -12,8 +12,8 @@
         "title": "Mehr Zeit für Patienten",
         "description": "Weniger administrativen Aufwand in Ihrer Praxis. Ihr digitaler Copilot für die Praxisadministration.",
         "callToAction": {
-            "showCallButton": false,
-            "showWhatsAppChatButton": false,
+            "showCallButton": true,
+            "showWhatsAppChatButton": true,
             "showOnlineTerminButton": true,
             "callButton": {
                 "label": "Anrufen",
@@ -31,6 +31,32 @@
                 "class": "ease-in duration-300 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-80"
             }
         },
+        "bulletPoints": [
+            "Formulare halbautomatisch ausfüllen",
+            "Kostengutsprachen mit KI formulieren",
+            "Durch Praxisinhaber und MPAs in 🇨🇭 entwickelt",
+            "Kein Schulungsaufwand, keine Schnittstelle"
+        ],
+        "testimonials": [
+            {
+                "image": "/images/testimonials/Angelika.jpg",
+                "name": "Angelika Bergmann",
+                "position": "MPA Leitung, Stäfa",
+                "quote": "Früher sind IV-Anfragen und Rückweisungen bei uns leider liegen geblieben. Heute übernimmt das Tool die meiste Arbeit."
+            },
+            {
+                "image": "/images/testimonials/DrEckardt-min.jpg",
+                "name": "Dr. med. Helmut Eckardt",
+                "position": "Praxisinhaber, Zürich",
+                "quote": "Mehr Arbeitszufriedenheit bei meinen MPAs, weniger Überstunden, weniger Rückfragen. Nur zu empfehlen!"
+            },
+            {
+                "image": "/images/testimonials/DrFischer.png",
+                "name": "Dr. med. Georg Fischer",
+                "position": "Praxisinhaber, FA für Allgemeinmedizin, Zürich",
+                "quote": "Das KI-Tool hat meine Praxis effizienter gemacht. Von der Dokumentation von Wunden bis hin zur Erstellung von Ernährungsplänen."
+            }
+        ],
         "svgGradientStops": [
             {
                 "id": "paint0_linear_25:217",
