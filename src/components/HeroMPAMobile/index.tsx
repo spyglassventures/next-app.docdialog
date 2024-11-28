@@ -113,7 +113,7 @@ const Hero = () => {
             <li className="flex items-center">
               <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />
               <span className="text-sm text-black dark:text-gray-300">
-                Formulare halbautomatisch ausfüllen
+                KTG, und IV Formulare bleiben nicht mehr liegen
               </span>
             </li>
             <li className="flex items-center">
@@ -125,13 +125,13 @@ const Hero = () => {
             <li className="flex items-center">
               <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />
               <span className="text-sm text-black dark:text-gray-300">
-                Durch Praxisinhaber und MPAs in 🇨🇭 entwickelt
+                Durch MPAs in 🇨🇭 entwickelt, gut für Einsteiger
               </span>
             </li>
             <li className="flex items-center">
               <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />
               <span className="text-sm text-black dark:text-gray-300">
-                Kein Schulungsaufwand, keine Schnittstelle
+                Kein Schulungsaufwand, keine Schnittstelle, ...
               </span>
             </li>
           </ul>

@@ -113,19 +113,25 @@ const Hero = () => {
             <li className="flex items-center">
               <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />
               <span className="text-sm text-black dark:text-gray-300">
-                Formulare halbautomatisch ausfüllen
+                Formulare automatisch ausfüllen. Mehr delegieren.
               </span>
             </li>
             <li className="flex items-center">
               <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />
               <span className="text-sm text-black dark:text-gray-300">
-                Kostengutsprachen mit KI formulieren
+                Kostengutsprachen machen neu die MPAs mit KI
               </span>
             </li>
             <li className="flex items-center">
               <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />
               <span className="text-sm text-black dark:text-gray-300">
-                Durch Praxisinhaber und MPAs in 🇨🇭 entwickelt
+                Durch 🇨🇭 Praxisinhaber entwickelt.
+              </span>
+            </li>
+            <li className="flex items-center">
+              <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />
+              <span className="text-sm text-black dark:text-gray-300">
+                Gut für Einsteiger. Braucht wenig IT Kenntnisse.
               </span>
             </li>
             <li className="flex items-center">

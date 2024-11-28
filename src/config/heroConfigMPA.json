@@ -9,8 +9,8 @@
             "comment2": "Beispiel /images/hero/background.jpg or /images/about/video1.mov  <- nur Bsp",
             "comment3": "favicon.ico can be used as a placeholder picture"
         },
-        "title": "Mehr Zeit für Patienten",
-        "description": "Weniger administrativen Aufwand in Ihrer Praxis. Ihr digitaler Copilot für die Praxisadministration.",
+        "title": "Weniger Aufwand mit Büroarbeiten",
+        "description": "Und wieder mehr Zeit für den Patienten in Eurer Praxis. Ihr digitaler Copilot für die Praxisadministration.",
         "callToAction": {
             "showCallButton": true,
             "showWhatsAppChatButton": true,
@@ -21,7 +21,7 @@
                 "class": "ease-in duration-300 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-80"
             },
             "whatsappButton": {
-                "label": "Schreiben Sie uns per WhatsApp",
+                "label": "Schreib mir per WhatsApp",
                 "link": "https://wa.me/41798329298/?text=Liebes%20DocDialog%20Team,%20Ich%20",
                 "class": "ease-in duration-300 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded w-80"
             },
@@ -31,12 +31,7 @@
                 "class": "ease-in duration-300 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-80"
             }
         },
-        "bulletPoints": [
-            "Formulare halbautomatisch ausfüllen",
-            "Kostengutsprachen mit KI formulieren",
-            "Durch Praxisinhaber und MPAs in 🇨🇭 entwickelt",
-            "Kein Schulungsaufwand, keine Schnittstelle"
-        ],
+        "bulletPoints": [],
         "testimonials": [
             {
                 "image": "/images/testimonials/Angelika.jpg",

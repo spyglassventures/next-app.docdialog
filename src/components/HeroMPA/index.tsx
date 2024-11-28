@@ -180,15 +180,15 @@ const Hero = () => {
                 <ul className="flex flex-col items-start space-y-2 mb-6 pl-4 sm:pl-10">
                   <li className="flex items-center">
                     <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />
-                    <span className="text-sm text-left sm:text-base text-black dark:text-gray-300">Formulare halbautomatisch ausfüllen</span>
+                    <span className="text-sm text-left sm:text-base text-black dark:text-gray-300">KTG, und IV Formulare bleiben nicht mehr liegen</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />
-                    <span className="text-sm text-left sm:text-base text-black dark:text-gray-300">Kostengutsprachen mit KI formulieren</span>
+                    <span className="text-sm text-left sm:text-base text-black dark:text-gray-300"> Kostengutsprachen mit KI formulieren</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />
-                    <span className="text-sm text-left sm:text-base text-black dark:text-gray-300">Durch Praxisinhaber und MPAs in 🇨🇭 entwickelt</span>
+                    <span className="text-sm text-left sm:text-base text-black dark:text-gray-300">Durch MPAs in 🇨🇭 entwickelt, gut für Einsteiger</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircleIcon className="h-5 w-5 text-green-500 dark:text-green-400 mr-2" />
