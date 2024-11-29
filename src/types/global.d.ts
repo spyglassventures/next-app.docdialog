@@ -16,3 +16,7 @@ declare global {
         dataLayer: any[];
     }
 }
+
+interface Window {
+    gtag?: (...args: any[]) => void;
+}

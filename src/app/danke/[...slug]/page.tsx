@@ -59,14 +59,23 @@ const ThankYouPage = () => {
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
                 event: "thank_you_message",
-                source_path: pathname, // Track the source path for analytics
+                source_path: pathname, // Track the source path for analytics noted as SVA Terminbuchung Calendly (SVA used for all)
             });
+
+            // Trigger Google Ads conversion event, Thank you 
+            if (window.gtag) {
+                window.gtag("event", "conversion", {
+                    send_to: "AW-955937831/cd8HCLbCkOQZEKfo6ccD",
+                });
+            }
         }
     }, [pathname]);
 
     const { modules } = homePageConfig;
 
     return (
+
+
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-800 py-16 px-4 md:py-20">
             {/* Canvas for Thank You Message */}
             <div className="text-center bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg mb-8 max-w-md mx-auto">
