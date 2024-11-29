@@ -39,6 +39,22 @@ export default function RootLayout({
           type="text/javascript">
         </script>
 
+        {/* Google Ads (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-955937831"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-955937831');
+            `,
+          }}
+        />
+
         {/* Google Analytics Tag */}
         <script
           async
