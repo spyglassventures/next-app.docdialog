@@ -7,6 +7,8 @@ import modalConfig from '@/config/modalConfig.json';
 import heroConfig from '@/config/heroConfig.json';
 import { CheckCircleIcon } from '@heroicons/react/24/solid'; // Import the green checkmark icon
 
+import Typewriter from "../../components/typewriter";
+
 const Hero = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const handleOpenModal = () => setModalOpen(true);
@@ -134,6 +136,8 @@ const Hero = () => {
                   </ul>
 
 
+
+
                   {/* Call-to-action buttons */}
                   <div className="flex flex-col items-center space-y-4 mb-6 sm:flex-row sm:space-y-0 sm:space-x-4">
                     {heroConfig.hero.callToAction.showCallButton && (
@@ -164,8 +168,13 @@ const Hero = () => {
                         {heroConfig.hero.callToAction.onlineBookingButton.label}
                       </Link>
 
+
+
                     )}
+
                   </div>
+                  {/* Add ChatGPT Clone component */}
+                  <Typewriter />
                 </div>
               </div>
             </div>
