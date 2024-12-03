@@ -26,7 +26,7 @@
                 "class": "ease-in duration-300 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded w-80"
             },
             "onlineBookingButton": {
-                "label": "Online Demo buchen",
+                "label": "Doc Dialog kennenlernen",
                 "link": "https://calendly.com/doc-dialog/30min",
                 "class": "ease-in duration-300 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-80"
             }
