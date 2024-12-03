@@ -32,9 +32,7 @@ const ThankYouPage = () => {
                     <p>Vielen Dank, dass Sie mich über Instagram kontaktiert haben!</p>
                 );
             } else if (pathname.includes("messe")) {
-                setCustomContent(
-                    <p>Ich freue mich, Sie auf der Messe zu treffen!</p>
-                );
+                setCustomContent(<p>Ich freue mich auf unser bevorstehendes Gespräch!</p>);
             } else if (pathname.includes("linkedin")) {
                 setCustomContent(
                     <p>Vielen Dank, dass Sie mich über LinkedIn kontaktiert haben!</p>

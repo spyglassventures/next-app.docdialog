@@ -192,7 +192,7 @@ const Hero = () => {
 
 
             {/* Trust Partner right */}
-            <div>
+            {/* <div>
               <div className="hidden md:block absolute right-0 bottom-0 p-4 m-20 bg-white bg-opacity-95 dark:bg-gray-800 dark:bg-opacity-90 z-10 rounded-lg w-[350px] h-auto md:right-0 md:bottom-0 md:m-2">
                 <h3 className="text-lg font-extralight mb-2 text-black dark:text-gray-300" style={{ fontFamily: 'Roboto, sans-serif' }}>
                   Kongressteilnahme
@@ -209,7 +209,7 @@ const Hero = () => {
                   </div>
                 </Link>
               </div>
-            </div>
+            </div> */}
 
 
 

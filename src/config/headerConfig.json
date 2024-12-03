@@ -16,12 +16,16 @@
             "path": "/about"
         },
         {
-            "title": "Lageplan und Kontakt",
+            "title": "Lageplan",
             "path": "/contactForm"
         },
         {
             "title": "Bestellen",
-            "path": "/downloadsBestellungen"
+            "path": "/bestellformular"
+        },
+        {
+            "title": "Kontaktformular",
+            "path": "/mailer"
         }
     ],
     "contactNumber": "Tel. 079 832 92 98"

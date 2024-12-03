@@ -34,7 +34,7 @@ export default function ContactForm() {
 
     try {
       console.log("Attempting to send data..."); // Confirm fetch attempt
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/api/sendgrid_contact", {
         // file with config, in configuration. Its in path src/pages/api/
         method: "POST",
         headers: {
@@ -84,9 +84,9 @@ export default function ContactForm() {
             <div className="w-full px-4 md:w-1/2">
               <div className="mb-8">
                 <label htmlFor="name" className="mb-3 block text-sm font-medium text-dark dark:text-white">
-                  Vor- und Nachname, Geburtsdatum
+                  Vor- und Nachname
                 </label>
-                <input type="text" required minLength={5} maxLength={100} placeholder="Hans Meier, 01.01.1970" className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none" id="name" />
+                <input type="text" required minLength={5} maxLength={100} placeholder="Dr. med. Hans Meier" className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none" id="name" />
               </div>
             </div>
             <div className="w-full px-4 md:w-1/2">
@@ -102,7 +102,7 @@ export default function ContactForm() {
                 <label htmlFor="message" className="mb-3 block text-sm font-medium text-dark dark:text-white">
                   Ihre Nachricht
                 </label>
-                <textarea name="message" rows={5} required minLength={10} maxLength={1500} placeholder="Liebes MPA Team, ..." className="border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none" id="message"></textarea>
+                <textarea name="message" rows={5} required minLength={10} maxLength={1500} placeholder="Liebes Team, ..." className="border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none" id="message"></textarea>
               </div>
             </div>
             <div className="w-full px-4">
