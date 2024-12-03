@@ -121,7 +121,7 @@ export default function OrderForm() {
             id="additionalInfo"
             name="additionalInfo"
             placeholder="Zusätzliche Informationen"
-            rows="3"
+            // rows="3"
             className="w-full rounded-sm border border-gray-300 px-4 py-2 text-gray-800"
           ></textarea>
         </div>
