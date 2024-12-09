@@ -18,9 +18,21 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         rel="nofollow noreferrer"
         className="relative h-10 w-full opacity-70 transition hover:opacity-100 dark:opacity-60 dark:hover:opacity-100"
       >
-        <Image src={image} alt={name} fill sizes="(min-width: 808px) 50vw, 100vw" className="block dark:hidden" />
+        <Image
+          src={image}
+          alt={name}
+          fill
+          sizes="(min-width: 1280px) 20vw, (min-width: 768px) 30vw, 50vw"
+          className="block dark:hidden"
+        />
         {imageLight && (
-          <Image src={imageLight} alt={name} fill className="hidden dark:block" />
+          <Image
+            src={imageLight}
+            alt={name}
+            fill
+            sizes="(min-width: 1280px) 20vw, (min-width: 768px) 30vw, 50vw"
+            className="hidden dark:block"
+          />
         )}
       </a>
     </div>
@@ -63,36 +75,19 @@ const Brands = () => {
     <section className="pt-12" ref={sectionRef}>
       <div className="container">
         <div className="flex justify-center">
-          <h1 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
-            Im Einsatz bei
-          </h1>
+          <h1 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">Unsere Partner</h1>
         </div>
         <div className="-mx-6 flex flex-wrap">
           <div className="w-full px-1">
-            <div
-              className={`grid grid-cols-3 gap-4 overflow-x-auto bg-gray-light px-4 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px] ${isVisible ? 'opacity-100 transition-opacity duration-500 delay-500' : 'opacity-0'
-                }`}
-            >
+            <div className={`flex flex-wrap items-center justify-center rounded-sm bg-gray-light px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px] ${isVisible ? 'opacity-100 transition-opacity duration-500 delay-500' : 'opacity-0'}`}>
               {brandsData.map((brand) => (
-                <div key={brand.id} className="inline-block">
-                  <a href={brand.href} target="_blank" rel="noopener noreferrer">
-                    <img
-                      src={brand.image}
-                      alt={brand.name}
-                      className="object-contain h-12" // Reduced size
-                    />
-                  </a>
-                </div>
+                <SingleBrand key={brand.id} brand={brand} />
               ))}
             </div>
           </div>
         </div>
       </div>
     </section>
-
-
-
-
   );
 };
 
