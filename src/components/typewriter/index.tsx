@@ -3,8 +3,9 @@ import { useState, useEffect } from "react";
 
 const Typewriter = () => {
   const texts = [
-    "Reisehinweise Brasilien, Pat 45 w, Diabetikerin",
+    "Doc Dialog formuliert für Sie Texte auf Basis Ihrer Stichworte. Z.B.:",
     "Erstelle Kostengutsprache Zyban, beachte Limitatio, siehe KG Eintrag ...",
+    "Reisehinweise Brasilien, Pat 45 w, Diabetikerin",
     "Fülle Formular KTG aus, Inhalt siehe KG Eintrag vom ...",
     "HIN Emails von Kardiologen in 10km Luftlinie von mir",
     "Beantworte Mail KTG, Referenz 35.044.533, Antworten zu allen Fragen ausformulieren, siehe KG Eintrag ...",
