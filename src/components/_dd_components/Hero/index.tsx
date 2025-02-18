@@ -1,13 +1,13 @@
 "use client";
 import Link from "next/link";
-import Modal from '../../components/Modal';
-import ModalContent from '../../components/Modalcontent';
+import Modal from '../../Modal';
+import ModalContent from '../../Modalcontent';
 import { useState, useEffect } from 'react';
 import modalConfig from '@/config/modalConfig.json';
 import heroConfig from '@/config/heroConfig.json';
 import { CheckCircleIcon } from '@heroicons/react/24/solid'; // Import the green checkmark icon
 
-import Typewriter from "../../components/typewriter";
+import Typewriter from "../../typewriter";
 
 const Hero = () => {
   const [isModalOpen, setModalOpen] = useState(false);

@@ -1,5 +1,5 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import AboutSectionOne from "@/components/_dd_components/About/AboutSectionOne";
+import AboutSectionTwo from "@/components/_dd_components/About/AboutSectionTwo";
 
 
 import DownloadsBestellungen from "@/components/DownloadsBestellungen/";

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import Modal from "../Modal";
-import ModalContent from "../Modalcontent";
+import Modal from "../../Modal";
+import ModalContent from "../../Modalcontent";
 import { useState, useEffect } from "react";
 import modalConfig from "@/config/modalConfig.json";
 import heroConfig from "@/config/heroConfigArzt.json";

@@ -44,7 +44,7 @@
             "title": "Hilfe und Kontakt",
             "links": [
                 {
-                    "href": "/contactForm",
+                    "href": "/mailer",
                     "text": "Kontaktformular"
                 },
                 {

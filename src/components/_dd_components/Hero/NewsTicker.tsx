@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/NewsTicket.module.css'; // Import CSS module for styling
+import styles from '../../../styles/NewsTicket.module.css'; // Import CSS module for styling
 import newsTickerConfig from '@/config/newsTickerConfig.json';
 
 const NewsTicker = () => {

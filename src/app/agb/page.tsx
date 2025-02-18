@@ -1,5 +1,5 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Agb from "@/components/AGB";
+import Agb from "@/components/_dd_components/dd_AGB";
 import agbPageConfig from "@/config/agbPageConfig.json";
 
 import { Metadata } from "next";

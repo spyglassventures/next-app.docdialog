@@ -229,7 +229,7 @@ export default function ClientPage() {
             </h2>
             {ActiveComponent && <ActiveComponent />}
             <p className="text-center text-gray-500 text-sm pt-2">
-              Testversion - der Copilot kann Fehler machen. Bitte alle Angaben im Detail kontrollieren und nicht blind kopieren.
+              Testversion – kein Medizinalprodukt. Nicht verwenden für Patientenentscheidungen oder wenn ärztliche Entscheidungen beeinflusst werden könnten. Der Copilot kann Fehler machen. Alle Angaben im Detail kontrollieren, nicht blind kopieren.
             </p>
           </div>
         </div>

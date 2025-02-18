@@ -122,7 +122,7 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
-                  href="tel:+41817562121" // International format for dialing
+                  href="tel:+41798329298" // International format for dialing
                   className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
                 >
                   {headerConfig.contactNumber}

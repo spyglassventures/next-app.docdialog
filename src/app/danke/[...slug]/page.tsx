@@ -4,15 +4,15 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import homePageConfig from "@/config/homePageConfig.json";
 import ScrollUp from "@/components/Common/ScrollUp";
-import Benefits from "@/components/Benefits";
+import Benefits from "@/components/_dd_components/Benefits";
 import VideoTestimonials from "@/components/VideoTestimonials";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Openinghours from "@/components/About/Openinghours";
+import AboutSectionTwo from "@/components/_dd_components/About/AboutSectionTwo";
+import Openinghours from "@/components/_dd_components/About/Openinghours";
 import Features from "@/components/Features";
 import Brands from "@/components/Brands";
-import AboutSectionOne from "@/components/About/AboutSectionOne";
+import AboutSectionOne from "@/components/_dd_components/About/AboutSectionOne";
 import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing";
+import Pricing from "@/components/_dd_components/Pricing";
 
 const ThankYouPage = () => {
     const pathname = usePathname();

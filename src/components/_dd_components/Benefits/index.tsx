@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "../../Common/SectionTitle";
 import Image from "next/image"; // Import Image from next/image
 
 const Benefits = () => {

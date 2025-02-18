@@ -1,16 +1,16 @@
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Openinghours from "@/components/About/Openinghours";
+import AboutSectionTwo from "@/components/_dd_components/About/AboutSectionTwo";
+import Openinghours from "@/components/_dd_components/About/Openinghours";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Features from "@/components/Features";
-import Hero from "@/components/HeroArztMobile";
-import NewsTicker from "@/components/Hero/NewsTicker";
-import Benefits from "@/components/Benefits";
+import Hero from "@/components/_dd_components/HeroArztMobile";
+import NewsTicker from "@/components/_dd_components/Hero/NewsTicker";
+import Benefits from "@/components/_dd_components/Benefits";
 import VideoTestimonials from "@/components/VideoTestimonials";
 
-import AboutSectionOne from "@/components/About/AboutSectionOne";
+import AboutSectionOne from "@/components/_dd_components/About/AboutSectionOne";
 import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing";
+import Pricing from "@/components/_dd_components/Pricing";
 
 import Contact from "@/components/Contact";
 import homePageConfig from "@/config/homePageConfig.json";
