@@ -26,6 +26,11 @@
         {
             "title": "Kontaktformular",
             "path": "/mailer"
+        },
+        {
+            "title": "Tardoc GPT",
+            "path": "https://tardocgpt.ch",
+            "external": true
         }
     ],
     "contactNumber": "Tel. 079 832 92 98"

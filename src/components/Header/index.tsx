@@ -106,15 +106,26 @@ const Header = () => {
                   <ul className="block lg:flex lg:space-x-12">
                     {headerConfig.menu.map((menuItem, index) => (
                       <li key={index} className="group relative">
-                        <Link
-                          href={menuItem.path}
-                          className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${usePathName === menuItem.path
-                            ? "text-primary dark:text-white"
-                            : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
-                            }`}
-                        >
-                          {menuItem.title}
-                        </Link>
+                        {menuItem.external ? (
+                          <a
+                            href={menuItem.path}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 text-dark hover:text-primary dark:text-white/70 dark:hover:text-white`}
+                          >
+                            {menuItem.title}
+                          </a>
+                        ) : (
+                          <Link
+                            href={menuItem.path}
+                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${usePathName === menuItem.path
+                                ? "text-primary dark:text-white"
+                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                              }`}
+                          >
+                            {menuItem.title}
+                          </Link>
+                        )}
                       </li>
                     ))}
                   </ul>
