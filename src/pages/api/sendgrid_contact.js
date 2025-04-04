@@ -19,7 +19,7 @@ export default async function handler(req, res) {
 
     const msg = {
         to: 'dm@spyglassventures.ch', // Replace with your recipient's email
-        from: 'dm+sender@spyglassventures.ch', // Replace with your verified sender email
+        from: 'dm+DocDialog@spyglassventures.ch', // Replace with your verified sender email
         subject: `Neue Nachricht von ${name}`,
         text: `Name: ${name}\nEmail: ${email}\nNachricht: ${message}`,
         html: `
